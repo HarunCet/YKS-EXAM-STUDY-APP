@@ -4,6 +4,22 @@ YKS (Yükseköğretim Kurumları Sınavı) hazırlık sürecindeki öğrencileri
 
 ---
 
+## 📸 Ekran Görüntüleri
+
+### Çalışma Paneli
+![Ekran Görüntüsü 1](./public/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-05-20%20211335.png)
+
+### Egzersiz Merkezi
+![Ekran Görüntüsü 2](./public/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-05-20%20211400.png)
+
+### YKS Bilgi Düellosu
+![Ekran Görüntüsü 3](./public/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-05-20%20211438.png)
+
+### YKS Sayaç
+![Ekran Görüntüsü 4](./public/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-05-20%20211520.png)
+
+---
+
 ## ✨ Özellikler
 
 ### 📊 1. Çalışma Paneli (Dashboard)
@@ -34,6 +50,10 @@ YKS (Yükseköğretim Kurumları Sınavı) hazırlık sürecindeki öğrencileri
 * Gün, saat, dakika ve saniye kırılımlarının yanı sıra toplam kalan saati net bir şekilde görebilme seçeneği.
 
 
+### 🔐 5. Güvenli Üyelik ve Altyapı (Auth & Database)
+* **Supabase SSR:** `@supabase/ssr` paketi ile sunucu taraflı çerez yönetimi ve güvenli kimlik doğrulama (Giriş/Kayıt/Çıkış).
+* **Veri Eşitleme:** Kullanıcı ilerlemeleri, notlar ve yarışma geçmişi Supabase veritabanında tamamen bulut üzerinde saklanır.
+* **Dark Mode & Light Mode:** Göz yormayan, Tailwind CSS v4 tabanlı modern gece ve gündüz teması.
 
 ---
 
