@@ -1,0 +1,207 @@
+[
+    {
+        "id": 1,
+        "konu": "Bilim & Teknoloji",
+        "paragraf": "Yapay zeka, son yıllarda insanlığın günlük yaşamına derinden nüfuz etmiştir. Makine öğrenimi algoritmaları, büyük veri setlerini analiz ederek kalıplar tespit etmekte ve bu kalıplar aracılığıyla tahminlerde bulunmaktadır. Özellikle sağlık alanında, derin öğrenme modelleri kanser teşhisinde uzman doktorlarla rekabet edebilecek bir hassasiyete ulaşmıştır. Bununla birlikte, yapay zekanın etik boyutları henüz tam anlamıyla çözüme kavuşturulamamıştır. Önyargılı verilerle eğitilen modeller, ayrımcı kararlar üretebilmektedir. Bu nedenle araştırmacılar, şeffaf ve açıklanabilir yapay zeka sistemleri geliştirmeye odaklanmaktadır.",
+        "anahtar_kelimeler": [
+            "yapay zeka",
+            "makine öğrenimi",
+            "derin öğrenme",
+            "sağlık",
+            "etik",
+            "önyargı",
+            "şeffaflık"
+        ]
+    },
+    {
+        "id": 2,
+        "konu": "Çevre & Ekoloji",
+        "paragraf": "İklim değişikliği, yeryüzündeki ekosistemleri köklü biçimde dönüştürmektedir. Kutuplardaki buzulların erimesi, deniz seviyelerinin yükselmesine yol açarak kıyı kentlerini tehdit etmektedir. Öte yandan, aşırı hava olaylarının sıklığı ve şiddeti giderek artmakta; seller, kuraklıklar ve orman yangınları hem insan yaşamını hem de biyoçeşitliliği ciddi biçimde zedelemektedir. Bilim insanları, sanayi devrimi öncesiyle kıyaslandığında atmosferdeki karbondioksit miktarının yüzde elli oranında arttığını belgelemektedir. Yenilenebilir enerji kaynaklarına geçiş ve karbon salınımının azaltılması, bu küresel krizi yönetmenin en etkili yolları olarak öne çıkmaktadır.",
+        "anahtar_kelimeler": [
+            "iklim değişikliği",
+            "buzullar",
+            "deniz seviyesi",
+            "biyoçeşitlilik",
+            "karbondioksit",
+            "yenilenebilir enerji"
+        ]
+    },
+    {
+        "id": 3,
+        "konu": "Felsefe & Düşünce",
+        "paragraf": "Sokrates'in 'kendini bil' öğüdü, Batı felsefesinin temel taşlarından biri olarak kabul edilmektedir. Sokrates, hakikatin diyalog yoluyla, yani karşılıklı soru-cevap aracılığıyla ortaya çıkabileceğini savunmuştur. Onun geliştirdiği maiötik yöntem, düşünceyi bir ebe gibi 'doğurtmayı' amaçlamaktaydı. Sokrates hiçbir yazılı eser bırakmamış; görüşleri öğrencisi Platon'un diyalogları sayesinde günümüze ulaşmıştır. Bu diyaloglarda Sokrates, Atina'nın önde gelen isimlerini sorgulayarak onların sandıkları kadar bilgili olmadıklarını gözler önüne sermiştir. Entelektüel alçakgönüllülüğün, felsefi araştırmanın ön koşulu olduğunu göstermiştir.",
+        "anahtar_kelimeler": [
+            "Sokrates",
+            "kendini bil",
+            "diyalog",
+            "maiötik",
+            "Platon",
+            "hakikat",
+            "entelektüel alçakgönüllülük"
+        ]
+    },
+    {
+        "id": 4,
+        "konu": "Tarih & Medeniyet",
+        "paragraf": "Osmanlı İmparatorluğu, üç kıtaya yayılan toprakları ve altı yüz yılı aşan ömrüyle insanlık tarihinin en köklü devletlerinden birini oluşturmaktadır. Millet sistemi aracılığıyla farklı din ve etnik kökenden gelen toplulukları bir arada tutan Osmanlılar, bu çeşitliliği güce dönüştürmeyi başarmıştır. Lale Devri'nde Batı'dan ilk matbaa ithal edilmiş; mimari, şiir ve minyatür sanatları ise olağanüstü bir gelişme kaydetmiştir. Tanzimat dönemiyle birlikte Batılılaşma sürecine giren imparatorluk, 19. yüzyılda milliyetçilik akımlarının yarattığı baskılarla baş etmekte güçlük çekmiştir. Osmanlı'nın mirası, bugün onlarca ülkenin hukuk, dil ve kültür yapısında yaşamaya devam etmektedir.",
+        "anahtar_kelimeler": [
+            "Osmanlı",
+            "millet sistemi",
+            "Lale Devri",
+            "matbaa",
+            "Tanzimat",
+            "milliyetçilik",
+            "miras"
+        ]
+    },
+    {
+        "id": 5,
+        "konu": "Psikoloji & İnsan Davranışı",
+        "paragraf": "Bilişsel önyargılar, insan düşüncesini sistematik biçimde saptıran zihinsel kısayollardır. Onay önyargısı, bireylerin mevcut inançlarını pekiştiren bilgileri arayıp benimsemelerine, buna karşın çelişen kanıtları görmezden gelmelerine yol açmaktadır. Çapa etkisi ise ilk alınan bilginin sonraki yargılar üzerinde orantısız bir ağırlık taşımasına neden olmaktadır. Daniel Kahneman, 'Hızlı ve Yavaş Düşünme' adlı eserinde bu olguları ayrıntılı biçimde ele alarak iki ayrı düşünme sistemi arasındaki farkı ortaya koymuştur: hızlı, otomatik ve sezgisel işleyen Sistem 1 ile yavaş, analitik ve bilinçli çalışan Sistem 2. Bu önyargıların farkında olmak, daha sağlıklı kararlar alabilmenin ilk adımıdır.",
+        "anahtar_kelimeler": [
+            "bilişsel önyargı",
+            "onay önyargısı",
+            "çapa etkisi",
+            "Kahneman",
+            "Sistem 1",
+            "Sistem 2",
+            "karar verme"
+        ]
+    },
+    {
+        "id": 6,
+        "konu": "Edebiyat & Sanat",
+        "paragraf": "Realizm akımı, 19. yüzyılın ikinci yarısında romantizme tepki olarak doğmuştur. Gerçekçi yazarlar, toplumun her kesiminden sıradan insanların gündelik yaşamını olduğu gibi yansıtmayı amaçlamıştır. Flaubert'in 'Madam Bovary'si ve Tolstoy'un 'Anna Karenina'sı bu akımın başyapıtları arasında sayılmaktadır. Türk edebiyatında ise Halit Ziya Uşaklıgil, realizmi 'Aşk-ı Memnu' romanıyla ustalıkla işlemiştir. Realizm; idealize edilmiş kahramanlar ve abartılı duygusallık yerine, toplumsal gerçeği ve psikolojik derinliği ön plana çıkarmıştır. Bu anlayış, sonraki dönemlerde naturalizm ve modernizm gibi akımların ortaya çıkmasına zemin hazırlamıştır.",
+        "anahtar_kelimeler": [
+            "realizm",
+            "romantizm",
+            "Flaubert",
+            "Tolstoy",
+            "Halit Ziya",
+            "Aşk-ı Memnu",
+            "naturalizm"
+        ]
+    },
+    {
+        "id": 7,
+        "konu": "Ekonomi & Toplum",
+        "paragraf": "Küreselleşme, ulusal ekonomileri birbirine bağlayan ve ticaret, sermaye ile bilginin sınır ötesi akışını hızlandıran çok boyutlu bir süreçtir. Bu süreç, dünya genelinde yoksulluğun azalmasına ve yaşam standartlarının yükselmesine katkıda bulunmuştur. Öte yandan gelir eşitsizliği derinleşmiş; bazı bölgeler ve kesimler bu dönüşümün dışında kalmıştır. Çok uluslu şirketler, düşük maliyetli iş gücü arayışıyla üretimi farklı ülkelere kaydırarak karmaşık tedarik zincirleri oluşturmuştur. Eleştirmenler, küreselleşmenin yerel kültürleri ve geleneksel üretim biçimlerini tehdit ettiğini öne sürmektedir. Bu tartışma, ekonomik büyüme ile kültürel sürdürülebilirlik arasındaki dengeye ilişkin temel soruları gündeme taşımaktadır.",
+        "anahtar_kelimeler": [
+            "küreselleşme",
+            "ticaret",
+            "gelir eşitsizliği",
+            "çok uluslu şirket",
+            "tedarik zinciri",
+            "kültürel sürdürülebilirlik"
+        ]
+    },
+    {
+        "id": 8,
+        "konu": "Fen Bilimleri",
+        "paragraf": "Kuantum mekaniği, atom altı parçacıkların klasik fizik yasalarından köklü biçimde farklı davrandığını ortaya koymaktadır. Süperpozisyon ilkesine göre bir parçacık, ölçülene dek birden fazla durumda aynı anda var olabilmektedir. Dolanıklık olgusu ise birbirine bağlı parçacıkların birbirinden ne kadar uzakta olursa olsun anlık biçimde etkileşebildiğini göstermekte; bu durum Einstein'ın 'uzaktaki ürkütücü eylem' dediği şeyi somutlaştırmaktadır. Kuantum bilgisayarlar, bu ilkeleri kullanarak geleneksel bilgisayarların çözmekte aciz kaldığı sorunları aşmayı hedeflemektedir. Bununla birlikte kuantum hatasızlığı ve tutarlılığın sürdürülmesi, alan için hâlâ en kritik teknik engeller arasında yer almaktadır.",
+        "anahtar_kelimeler": [
+            "kuantum",
+            "süperpozisyon",
+            "dolanıklık",
+            "Einstein",
+            "kuantum bilgisayar",
+            "hata düzeltme"
+        ]
+    },
+    {
+        "id": 9,
+        "konu": "Sağlık & Tıp",
+        "paragraf": "Mikrobiyom araştırmaları, bağırsak bakterilerinin genel sağlık üzerindeki derin etkisini gözler önüne sermektedir. Trilyonlarca mikroorganizmadan oluşan bağırsak florası; bağışıklık sisteminin düzenlenmesinde, ruh hâlinin şekillenmesinde ve sindirimin sağlıklı işleyişinde kilit bir rol üstlenmektedir. Son bulgular, mikrobiyom dengesizliklerini obezite, depresyon ve otoimmün hastalıklarla ilişkilendirmektedir. Bağırsak-beyin ekseni, bu iki organ arasındaki çift yönlü iletişim kanalını tanımlamakta ve bağırsak sağlığının bilişsel işlevleri doğrudan etkileyebileceğini ortaya koymaktadır. Probiyotikler ve lif açısından zengin diyetler, sağlıklı bir mikrobiyom çeşitliliğini desteklemede etkili yollar olarak öne çıkmaktadır.",
+        "anahtar_kelimeler": [
+            "mikrobiyom",
+            "bağırsak",
+            "bağışıklık",
+            "ruh hali",
+            "bağırsak-beyin ekseni",
+            "probiyotik",
+            "obezite"
+        ]
+    },
+    {
+        "id": 10,
+        "konu": "Sosyoloji & Kültür",
+        "paragraf": "Sosyal medya, modern toplumda kimlik oluşumunu ve toplumsal etkileşimi köklü biçimde dönüştürmüştür. Platformlar, kullanıcıların özenle kurgulanmış bir benlik sunumu yapmalarına olanak tanırken kıyaslamaya dayalı bir sosyal ortam da yaratmaktadır. Araştırmalar, ağır sosyal medya kullanımını özellikle gençlerde kaygı ve depresyon belirtilerinin artışıyla ilişkilendirmektedir. Öte yandan bu platformlar, dışlanmış grupların sesini duyurmasına, toplumsal hareketlerin örgütlenmesine ve anlık bilgi paylaşımına zemin hazırlamıştır. Yankı odaları etkisi, kullanıcıların yalnızca kendi görüşleriyle örtüşen içeriklerle karşılaştığı, giderek kutuplaşan bilgi baloncuklarının oluşmasına neden olmaktadır.",
+        "anahtar_kelimeler": [
+            "sosyal medya",
+            "kimlik",
+            "kıyaslama",
+            "kaygı",
+            "depresyon",
+            "yankı odası",
+            "kutuplaşma"
+        ]
+    },
+    {
+        "id": 11,
+        "konu": "Matematik & Mantık",
+        "paragraf": "Asal sayılar, matematikçileri yüzyıllardır büyüleyen gizemli yapılardır. Yalnızca 1 ve kendisiyle bölünebilen bu sayılar, tüm doğal sayıların yapı taşlarını oluşturmaktadır. Riemann Hipotezi, asal sayıların dağılımına ilişkin en önemli çözümsüz problem olma özelliğini korumaktadır. 1900 yılında Gauss, 1'den 1.000'e kadar olan sayıların yaklaşık yüzde on beşinin asal olduğunu hesaplamıştır. Şimdiye kadar keşfedilen en büyük asal sayı, on milyonlarca basamaktan oluşmaktadır. Modern şifreleme sistemleri, büyük asal sayıları çarpanlarına ayırmanın son derece güç olmasından güç alarak dijital güvenliği sağlamaktadır.",
+        "anahtar_kelimeler": [
+            "asal sayı",
+            "Riemann Hipotezi",
+            "Gauss",
+            "şifreleme",
+            "güvenlik",
+            "matematik"
+        ]
+    },
+    {
+        "id": 12,
+        "konu": "Coğrafya & Keşif",
+        "paragraf": "Anadolu, çeşitli medeniyetlerin doğup büyüdüğü, bir o kadar da yok olduğu eşsiz bir coğrafyadır. Hititler, Frigyalılar, Lidyalılar, Persler ve Bizanslılar başta olmak üzere pek çok uygarlık bu topraklarda egemenlik kurmuştur. Anadolu'nun stratejik konumu onu Doğu ile Batı arasındaki ticari ve kültürel bir köprüye dönüştürmüştür. İpek Yolu'nun önemli bir hattı bu topraklardan geçmekte; böylece fikirlerin, malların ve kültürel birikimlerin aktarımına zemin oluşturmaktaydı. Kapadokya'nın peri bacaları, Troya'nın kadim kalıntıları ve Efes'in hayranlık uyandıran kalıpları bu zengin mirasın somut izleridir. Anadolu bugün de katmanlı tarihi ve benzersiz coğrafi yapısıyla araştırmacıları büyülemeye devam etmektedir.",
+        "anahtar_kelimeler": [
+            "Anadolu",
+            "Hitit",
+            "Bizans",
+            "İpek Yolu",
+            "Kapadokya",
+            "Troya",
+            "Efes"
+        ]
+    },
+    {
+        "id": 13,
+        "konu": "Dil & Dilbilim",
+        "paragraf": "Türkçe, Ural-Altay dil ailesinin Türk koluna ait aglutinatif yapılı bir dildir. Bu yapı sayesinde kök sözcüklere eklenen çeşitli ekler, zengin anlam katmanları oluşturmaktadır. Türkçe, ünlü uyumu ilkesine göre işlemekte; sözcük içindeki ünlüler ön-art ve düz-yuvarlak açısından tutarlı bir uyum sergilemektedir. Türk dilinin yazılı tarihi, 8. yüzyıla ait Orhun Yazıtları'na kadar uzanmaktadır. Atatürk'ün önderliğinde 1928'de gerçekleştirilen harf devrimi, Arap alfabesinden Latin alfabesine geçişi sağlamış ve okuryazarlık oranını kısa sürede belirgin biçimde artırmıştır. Türkçe, bugün dünya genelinde seksen milyondan fazla kişi tarafından anadil olarak konuşulmaktadır.",
+        "anahtar_kelimeler": [
+            "Türkçe",
+            "aglutinatif",
+            "ünlü uyumu",
+            "Orhun Yazıtları",
+            "harf devrimi",
+            "Latin alfabesi"
+        ]
+    },
+    {
+        "id": 14,
+        "konu": "Biyoloji & Evrim",
+        "paragraf": "Darwin'in doğal seçilim teorisi, canlı dünyasının çeşitliliğini açıklayan temel biyolojik çerçeveyi sunmaktadır. Buna göre bireylerin kalıtsal özellikleri birbirinden farklıdır; belirli bir çevrede hayatta kalmayı ve üremmeyi kolaylaştıran özellikler ise sonraki nesillere daha sık aktarılmaktadır. Zaman içinde bu birikimli süreç, toplulukların çevresine uyumunu derinleştirmekte; yeterince uzun süre işlediğinde yeni türlerin ortaya çıkmasına zemin hazırlamaktadır. Modern sentez anlayışı, Darwin'in teorisini genetik ve DNA'nın keşfiyle bütünleştirerek evrimin moleküler temelini ortaya koymuştur. Fosil kayıtları ve karşılaştırmalı genomik, evrimin milyarlarca yıla yayılan kanıtlarını gözler önüne sermektedir.",
+        "anahtar_kelimeler": [
+            "Darwin",
+            "doğal seçilim",
+            "kalıtım",
+            "uyum",
+            "tür",
+            "genetik",
+            "fosil"
+        ]
+    },
+    {
+        "id": 15,
+        "konu": "Felsefe & Etik",
+        "paragraf": "Kant'ın kategorik imperatifi, ahlak felsefesinin en etkili ilkelerinden biridir. Kant, ahlaki eylemin sonuçlarına değil, evrenselleştirilebilirliğine göre değerlendirilmesi gerektiğini ileri sürmüştür. 'Öyle eyle ki eyleminin ilkesi evrensel bir yasa olabilsin' biçiminde özetlenen bu formülasyon, sezgisel bir güce sahiptir. Kant'a göre insanlar birer araç olarak değil, amaç olarak muamele görmeyi hak etmektedir. Bu anlayış, onun ödev etiğini, yani deontolojisini şekillendirmektedir. Faydacılıkla kıyaslandığında Kant'ın yaklaşımı, salt mutluluğu değil; ödev, haklar ve insan onuruna saygıyı merkeze alması bakımından belirgin biçimde ayrışmaktadır.",
+        "anahtar_kelimeler": [
+            "Kant",
+            "kategorik imperatif",
+            "evrensellik",
+            "ödev etiği",
+            "deontoloji",
+            "faydacılık",
+            "insan onuru"
+        ]
+    }
+]

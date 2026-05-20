@@ -1,0 +1,242 @@
+[
+    {
+        "questionNumber": 1,
+        "question": "Bir kutuphanede bulunan 720 kitabin bir kismi ilk gunun sonunda raflarin 1/5'i kadar odunc veriliyor. Ikinci gun kalan kitaplarin 1/4'u iade edilmek uzere ayriliyor. Ucuncu gun ise kalan kitaplarin yarisi baska bir subeye gonderiliyor. Buna gore kutuphanede en son kac kitap kalmistir?",
+        "answer": "216"
+    },
+    {
+        "questionNumber": 2,
+        "question": "Bir sinifta erkeklerin sayisi kizlarin sayisinin 2 katindan 6 fazladir. Sinifta toplam 42 ogrenci olduguna gore kiz ogrenci sayisi kactir?",
+        "answer": "12"
+    },
+    {
+        "questionNumber": 3,
+        "question": "Iki isci birlikte bir isi 10 gunde yapabiliyor. Birinci isci tek basina ayni isi 15 gunde yapabildigine gore ikinci isci tek basina kac gunde yapar?",
+        "answer": "30"
+    },
+    {
+        "questionNumber": 4,
+        "question": "Bir arac 240 km'lik yolun once 1/3'unu 60 km/s hizla, kalan kismini ise 80 km/s hizla aliyor. Buna gore aracin ortalama hizi kac km/s'dir?",
+        "answer": "72"
+    },
+    {
+        "questionNumber": 5,
+        "question": "Bir urunun alis fiyati 400 TL'dir. Satici bu urunu once %25 karla etiketliyor, ardindan %20 indirim uyguluyor. Buna gore saticinin kari kac TL olur?",
+        "answer": "0"
+    },
+    {
+        "questionNumber": 6,
+        "question": "Bir torbada kirmizi, mavi ve yesil toplar vardir. Kirmizi toplarin sayisi mavi toplarin sayisinin 2 kati, yesil toplarin sayisi ise mavi toplarin sayisinin 3 katidir. Torbada toplam 60 top olduguna gore mavi toplarin sayisi kactir?",
+        "answer": "10"
+    },
+    {
+        "questionNumber": 7,
+        "question": "Bir ogrenci sinavdaki 40 sorunun %70'ini dogru yapiyor. Dogru yaptigi her soru 2 puan, yanlis yaptigi her soru -1 puandir. Buna gore ogrencinin toplam puani kactir?",
+        "answer": "44"
+    },
+    {
+        "questionNumber": 8,
+        "question": "Bir tren 300 km'lik yolu sabit hizla 5 saatte aliyor. Ayni tren hizini 20 km/s artirirsa ayni yolu kac saatte alir?",
+        "answer": "3"
+    },
+    {
+        "questionNumber": 9,
+        "question": "Bir isci bir isi 6 saatte, diger isci ayni isi 4 saatte yapmaktadir. Ikisi birlikte calistiktan 2 saat sonra hizli olan isci isi birakirsa kalan is kac saatte tamamlanir?",
+        "answer": "2"
+    },
+    {
+        "questionNumber": 10,
+        "question": "Bir sayi ile bu sayinin 3 katinin toplami 80'dir. Buna gore sayi kactir?",
+        "answer": "20"
+    },
+    {
+        "questionNumber": 11,
+        "question": "Bir arac sabit hizla 2 saat gidip 30 dakika mola veriyor, ardindan ayni hizla 3 saat daha gidiyor. Toplam aldigi yol 300 km olduguna gore aracin hizi kac km/s'tir?",
+        "answer": "60"
+    },
+    {
+        "questionNumber": 12,
+        "question": "Bir magaza 500 TL'lik urune %10 indirim yaptiktan sonra kalan fiyat uzerinden %20 zam yapiyor. Son fiyat kac TL olur?",
+        "answer": "540"
+    },
+    {
+        "questionNumber": 13,
+        "question": "Bir sinifta ogrencilerin 1/3'u futbol, 1/4'u basketbol oynamaktadir. Geriye kalan 10 ogrenci hicbir spor yapmadigina gore sinif mevcudu kactir?",
+        "answer": "60"
+    },
+    {
+        "questionNumber": 14,
+        "question": "Bir isci bir isi gunde 8 saat calisarak 12 gunde bitiriyor. Ayni isi gunde 6 saat calisarak kac gunde bitirir?",
+        "answer": "16"
+    },
+    {
+        "questionNumber": 15,
+        "question": "Bir arac saatte 90 km hizla 2 saat, saatte 60 km hizla 3 saat yol aliyor. Buna gore ortalama hizi kac km/s'tir?",
+        "answer": "72"
+    },
+    {
+        "questionNumber": 16,
+        "question": "Bir sayinin %40'i 80 ise sayinin tamami kactir?",
+        "answer": "200"
+    },
+    {
+        "questionNumber": 17,
+        "question": "Bir ciftlikte tavuk ve koyun sayisi toplam 50'dir. Hayvanlarin toplam ayak sayisi 140 olduguna gore tavuk sayisi kactir?",
+        "answer": "30"
+    },
+    {
+        "questionNumber": 18,
+        "question": "Bir torbada bulunan 100 bilyenin %30'u kirmizi, %20'si mavidir. Geriye kalanlar yesildir. Yesil bilye sayisi kactir?",
+        "answer": "50"
+    },
+    {
+        "questionNumber": 19,
+        "question": "Bir arac 100 km'lik yolun ilk 50 km'sini 50 km/s, kalanini 100 km/s hizla aliyor. Ortalama hiz kactir?",
+        "answer": "66,7"
+    },
+    {
+        "questionNumber": 20,
+        "question": "Bir isci bir isi 10 gunde, diger isci 15 gunde yapiyor. Ikisi birlikte calisirsa is kac gunde biter?",
+        "answer": "6"
+    },
+    {
+        "questionNumber": 21,
+        "question": "Bir urun %50 indirimle 200 TL'ye satiliyorsa urunun ilk fiyati kac TL'dir?",
+        "answer": "400"
+    },
+    {
+        "questionNumber": 22,
+        "question": "Bir sayinin 1/4'u ile 1/5'inin toplami 45'tir. Buna gore sayi kactir?",
+        "answer": "100"
+    },
+    {
+        "questionNumber": 23,
+        "question": "Bir tren 400 km'lik yolu sabit hizla 8 saatte aliyor. Hizi %25 artirilirsa ayni yolu kac saatte alir?",
+        "answer": "6,4"
+    },
+    {
+        "questionNumber": 24,
+        "question": "Bir ogrenci 5 sinavdan sirasiyla 60, 70, 80, 90 ve 100 puan aliyor. Ortalama kactir?",
+        "answer": "80"
+    },
+    {
+        "questionNumber": 25,
+        "question": "Bir isci bir isi tek basina 20 gunde yapiyor. Her gun yaptigi is miktarini %25 artirirsa isi kac gunde bitirir?",
+        "answer": "16"
+    },
+    {
+        "questionNumber": 26,
+        "question": "Bir arac 120 km yolu 2 saatte, 180 km yolu 3 saatte aliyor. Ortalama hizi kac km/s'tir?",
+        "answer": "60"
+    },
+    {
+        "questionNumber": 27,
+        "question": "Bir torbada 5 kirmizi, 7 mavi ve 8 yesil top vardir. Rastgele cekilen bir topun kirmizi olma olasiligi kactir?",
+        "answer": "1/4"
+    },
+    {
+        "questionNumber": 28,
+        "question": "Bir sayi 5 ile carpilip 20 cikarildiginda sonuc 80 oluyor. Buna gore sayi kactir?",
+        "answer": "20"
+    },
+    {
+        "questionNumber": 29,
+        "question": "Bir urun 300 TL'ye satildiginda %20 zarar edilmektedir. Urunun maliyeti kac TL'dir?",
+        "answer": "375"
+    },
+    {
+        "questionNumber": 30,
+        "question": "Bir isci bir isi 18 gunde yapiyor. Ayni isi 3 isci birlikte kac gunde yapar?",
+        "answer": "6"
+    },
+    {
+        "questionNumber": 31,
+        "question": "Bir okul gezisi icin 180 ogrenci uc farkli minibus her esit olmayacak sekilde paylastiriliyor. Ilk minibusteki ogrenci sayisi, ikinci minibustekinden 12 fazladir. Ucuncu minibuste ise ilk iki minibusteki toplam ogrenci sayisinin yarisi kadar ogrenci bulunmaktadir. Buna gore ikinci minibuste kac ogrenci vardir?",
+        "answer": "48"
+    },
+    {
+        "questionNumber": 32,
+        "question": "Bir magaza 960 adet urunu satisa sunuyor. Ilk gun urunlerin 1/4'unu, ikinci gun kalanlarin 1/3'unu satiyor. Ucuncu gun ise kalan urunlerin yarisini satiyor. Buna gore geriye kac urun kalir?",
+        "answer": "240"
+    },
+    {
+        "questionNumber": 33,
+        "question": "Bir baba ile oglunun yaslari toplami 50'dir. Baba, oglunun yasindayken ogul henuz dogmamisti. Buna gore babanin bugunku yasi kactir?",
+        "answer": "40"
+    },
+    {
+        "questionNumber": 34,
+        "question": "Iki arac birbirine dogru hareket etmektedir. Aralarindaki mesafe 300 km'dir. Birinci arac saatte 80 km, ikinci arac saatte 70 km hizla hareket etmektedir. Ikinci arac, birinci aractan 1 saat sonra yola cikiyor. Buna gore araclar kac saat sonra karsilasir?",
+        "answer": "2"
+    },
+    {
+        "questionNumber": 35,
+        "question": "Bir is yerinde 5 isci bir isi 12 gunde bitirebilmektedir. Ayni ise 3 isci daha eklenirse is kac gunde tamamlanir?",
+        "answer": "7,5"
+    },
+    {
+        "questionNumber": 36,
+        "question": "Bir urun once %30 indirimle satiliyor, ardindan indirimli fiyat uzerinden %20 zam yapiliyor. Son durumda urunun fiyati ilk fiyatina gore yuzde kac degismistir?",
+        "answer": "-16"
+    },
+    {
+        "questionNumber": 37,
+        "question": "Bir tuccar bir urunu 500 TL'ye alip %20 karla satiyor. Daha sonra ayni urunu %10 zarar ederek geri aliyor. Buna gore tuccarin son durumdaki kari kac TL'dir?",
+        "answer": "50"
+    },
+    {
+        "questionNumber": 38,
+        "question": "40 litre %25 tuz iceren cozelti ile 60 litre %10 tuz iceren cozelti karistiriliyor. Elde edilen karisimin tuz orani yuzde kactir?",
+        "answer": "16"
+    },
+    {
+        "questionNumber": 39,
+        "question": "Bir sinifta 30 ogrenci vardir. Ogrencilerin 18'i matematik, 20'si fizik dersini sevmektedir. Her iki dersi seven ogrenci sayisi 10 olduguna gore hicbirini sevmeyen kac ogrenci vardir?",
+        "answer": "2"
+    },
+    {
+        "questionNumber": 40,
+        "question": "4 basamakli bir sayinin rakamlari farklidir. Rakamlarin toplami 18'dir. En buyuk rakam ile en kucuk rakam arasindaki fark 6'dir. Buna gore bu sayinin en buyuk degeri kactir?",
+        "answer": "9630"
+    },
+    {
+        "questionNumber": 41,
+        "question": "Bir tarifte 5 kisilik yemek icin 300 gram pirinc kullanilmaktadir. Ayni tarif 8 kisilik yapilmak istenirse kac gram pirinc gerekir?",
+        "answer": "480"
+    },
+    {
+        "questionNumber": 42,
+        "question": "Bir teknenin durgun sudaki hizi 20 km/s, akinti hizi 5 km/s'dir. Tekne akinti yonunde 50 km gidip geri donuyor. Toplam yolculuk suresi kac saattir?",
+        "answer": "5"
+    },
+    {
+        "questionNumber": 43,
+        "question": "Bir annenin yasi kizinin yasinin 3 katidir. 6 yil sonra annenin yasi kizinin yasinin 2 kati olacaktir. Buna gore annenin bugunku yasi kactir?",
+        "answer": "36"
+    },
+    {
+        "questionNumber": 44,
+        "question": "Bir kisi 10.000 TL'yi yillik %12 basit faizle bankaya yatiriyor. 8 ay sonunda elde ettigi faiz geliri kac TL olur?",
+        "answer": "800"
+    },
+    {
+        "questionNumber": 45,
+        "question": "Bir havuzu A muslugu 8 saatte, B muslugu 12 saatte dolduruyor. C muslugu ise dolu havuzu 6 saatte bosaltiyor. Uc musluk birlikte acildiginda havuz kac saatte dolar?",
+        "answer": "24"
+    },
+    {
+        "questionNumber": 46,
+        "question": "Kargo sirketinde calisan kurye Ali, dagitim merkezinden teslimat noktasina gitmek icin navigasyon cihazini actiginda iki farkli rota goruyor. Birinci rota otoyol uzerinden gitmekte olup daha uzundur ancak ortalama hizi saatte 90 km'ye cikabilmektedir. Ikinci rota ise sehir ici yolu olup otoyol rotasindan 40 km daha kisadir fakat trafik nedeniyle bu rotadaki ortalama hizi saatte 70 km'dir. Ali, her iki rotayi da secse teslimat noktasina varis suresinin navigasyonda ayni oldugunu goruyor. Buna gore kisa olan sehir ici rotasi kac km'dir?",
+        "answer": "140"
+    },
+    {
+        "questionNumber": 47,
+        "question": "Bir kahve dukkaninda hazirlanan ozel bir karisim icin A ve B turu cekirdekler kullanilmaktadir. Baslangicta 400 gram A ve 600 gram B cekirdegi karistiriliyor. Ancak usta tadimci, karisimin sertligini azaltmak icin bu karisima 200 gram daha B turu cekirdek ekliyor fakat bu sirada dikkatsizlik sonucu karisimdan 300 gram yere dokuluyor. Kalan karisima, dokulen toplam miktar kadar tekrar A turu cekirdek eklendiginde, son durumdaki A turu cekirdeklerin tum karisima orani yuzde kac olur?",
+        "answer": "50"
+    },
+    {
+        "questionNumber": 48,
+        "question": "Bir internet alisveris sitesi 'Sepette %20 Indirim' veya 'Kargo Bedava' seceneklerinden alisveris basina sadece birinin kullanilmasina izin vermektedir. Siteden tanesi 60 TL olan tisortlerden belirli sayida alan bir musteri, sepet tutarina %20 indirim uyguladiginda, 30 TL olan kargo ucretini de ayrica odemesine ragmen, kargo bedava secenegini sectigi duruma gore 18 TL daha karli ciktigini hesapliyor. Buna gore musteri kac adet tisort almistir?",
+        "answer": "4"
+    }
+]

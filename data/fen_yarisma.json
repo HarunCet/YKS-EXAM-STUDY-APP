@@ -1,0 +1,1290 @@
+[
+  {
+    "id": 1,
+    "ders": "Fizik",
+    "konu": "Isı ve Sıcaklık",
+    "soru": "Isı alan bir maddenin sıcaklığı ile ilgili hangisi her zaman doğrudur?",
+    "secenekler": {
+      "A": "Sıcaklığı kesinlikle artar.",
+      "B": "Sıcaklığı kesinlikle değişmez.",
+      "C": "Hal değiştirmiyorsa sıcaklığı artar.",
+      "D": "İç enerjisi azalır."
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Isı alan bir madde hal değiştiriyorsa (örneğin eriyen buz) sıcaklığı sabit kalır. Hal değiştirmiyorsa sıcaklığı artar. Her iki durumda da iç enerjisi kesinlikle artar."
+  },
+  {
+    "id": 2,
+    "ders": "Fizik",
+    "konu": "Dalgalar",
+    "soru": "Bir ses dalgasının yayılma hızı aşağıdakilerden hangisine bağlıdır?",
+    "secenekler": {
+      "A": "Sesin frekansına",
+      "B": "Sesin yayıldığı ortama",
+      "C": "Sesin şiddetine (genliğine)",
+      "D": "Ses kaynağının hareketine"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Tüm dalgalarda olduğu gibi ses dalgasının da yayılma hızı YALNIZCA yayıldığı ortama bağlıdır. Frekans ise yalnızca kaynağa bağlıdır. Ortam değişmedikçe hız değişmez."
+  },
+  {
+    "id": 3,
+    "ders": "Fizik",
+    "konu": "Optik",
+    "soru": "Işık ışınları az yoğun (kırıcılık indisi küçük) ortamdan çok yoğun ortama geçerken nasıl kırılır?",
+    "secenekler": {
+      "A": "Normalden uzaklaşarak",
+      "B": "Normale yaklaşarak",
+      "C": "Hiç kırılmadan düz gider",
+      "D": "Tam yansımaya uğrar"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Işık çok yoğun ortama geçerken hızı azalır ve normale yaklaşarak kırılır. Az yoğun ortama geçerken ise hızı artar ve normalden uzaklaşır. 'Çoktan aza geçen uzaklaşır, azdan çoğa geçen yaklaşır' diye kodlayabilirsin."
+  },
+  {
+    "id": 4,
+    "ders": "Fizik",
+    "konu": "Elektrostatik",
+    "soru": "Nötr ve iletken bir küreye, artı (+) yüklü bir cisim yaklaştırılırsa kürenin yük dağılımı nasıl olur?",
+    "secenekler": {
+      "A": "Küre tamamen nötr kalmaya devam eder.",
+      "B": "Yakın kısım (+) yüklenir, uzak kısım (-) yüklenir.",
+      "C": "Yakın kısım (-) yüklenir, uzak kısım (+) yüklenir.",
+      "D": "Küre her yerinde eşit miktarda (-) yüklenir."
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Etki ile elektriklenmede zıt yükler birbirini çeker. Artı yüklü cisim, küredeki eksileri kendine yakın tarafa çeker. Uzak tarafta ise eksiler gittiği için artı yük yoğunliği kalır."
+  },
+  {
+    "id": 5,
+    "ders": "Fizik",
+    "konu": "Fotoelektrik",
+    "soru": "Fotoelektrik olayda kullanılan metalin eşik enerjisi (bağlanma enerjisi) aşağıdakilerden hangisine bağlıdır?",
+    "secenekler": {
+      "A": "Gelen ışığın frekansına",
+      "B": "Gelen ışığın şiddetine",
+      "C": "Kullanılan metalin cinsine",
+      "D": "Koparılan elektronların hızına"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Eşik enerjisi, elektronu metalden koparmak için gereken minimum enerjidir ve sadece metalin cinsine bağlıdır. Gelen ışığın enerjisi eşik enerjisinden büyükse fotoelektron kopabilir."
+  },
+  {
+    "id": 6,
+    "ders": "Fizik",
+    "konu": "Kepler Yasaları",
+    "soru": "Güneş etrafında eliptik yörüngede dolanan bir gezegen Güneş'e en yakın konumdayken hangisi gerçekleşir?",
+    "secenekler": {
+      "A": "Çizgisel hızı en küçük değerini alır.",
+      "B": "Açısal momentumu artar.",
+      "C": "Çizgisel hızı en büyük değerini alır.",
+      "D": "Kütle çekim kuvveti en küçük olur."
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Gezegen Güneş'e yaklaştıkça kütle çekim potansiyel enerjisi azalır, kinetik enerjisi artar. Bu yüzden hızı en büyük olur. Dış tork sıfır olduğu için açısal momentum (L) ise sabit kalır."
+  },
+  {
+    "id": 7,
+    "ders": "Fizik",
+    "konu": "Kaldırma Kuvveti",
+    "soru": "Kendi sıvısında yüzen dengedeki bir cisme etki eden kaldırma kuvveti ile ilgili hangisi doğrudur?",
+    "secenekler": {
+      "A": "Cismin ağırlığından büyüktür.",
+      "B": "Cismin ağırlığına eşittir.",
+      "C": "Cismin ağırlığından küçüktür.",
+      "D": "Cismin batan hacminden bağımsızdır."
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Yüzen ve askıda kalan cisimlerde kaldırma kuvveti (Fk) daima cismin ağırlığına (G) eşittir. Batan cisimlerde ise kaldırma kuvveti ağırlıktan küçüktür."
+  },
+  {
+    "id": 8,
+    "ders": "Kimya",
+    "konu": "Asitler ve Bazlar",
+    "soru": "Aşağıdaki metallerden hangisi amfoter metal olup hem kuvvetli asitlerle hem de kuvvetli bazlarla tepkime vererek H₂ gazı açığa çıkarır?",
+    "secenekler": {
+      "A": "Altın (Au)",
+      "B": "Bakır (Cu)",
+      "C": "Çinko (Zn)",
+      "D": "Demir (Fe)"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Amfoter metaller (Al, Zn, Pb, Sn, Cr, Be) hem asitlerle hem de kuvvetli bazlarla tepkimeye girerek hidrojen gazı üretir. 'Al Sana Kırmızı Pabuç Benden Zincir' tekerlemesiyle kodlayabilirsin."
+  },
+  {
+    "id": 9,
+    "ders": "Kimya",
+    "konu": "Periyodik Cetvel",
+    "soru": "Periyodik cetvelde aynı periyotta soldan sağa doğru gidildikçe genellikle hangisinde azalma görülür?",
+    "secenekler": {
+      "A": "Atom yarıçapı",
+      "B": "İyonlaşma enerjisi",
+      "C": "Elektronegatiflik",
+      "D": "Ametalik özellik"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Soldan sağa proton sayısı arttığı için çekirdeğin çekim gücü artar ve elektron bulutunu büzerek atom çapını küçültür. İyonlaşma enerjisi ve elektronegatiflik ise genellikle artar."
+  },
+  {
+    "id": 10,
+    "ders": "Kimya",
+    "konu": "Karışımlar",
+    "soru": "Çözeltilerin kolligatif özellikleri (kaynama noktası yükselmesi, donma noktası alçalması vb.) aşağıdakilerden hangisine bağlıdır?",
+    "secenekler": {
+      "A": "Çözünen maddenin cinsine",
+      "B": "Çözünen taneciklerin derişimine",
+      "C": "Çözücünün toplam hacmine",
+      "D": "Çözeltinin elektriksel iletkenliğine"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Kolligatif özellikler, çözünen maddenin kimyasal kimliğinden bağımsız olup, çözeltideki toplam çözünmüş tanecik (iyon veya molekül) derişimine bağlı olarak değişen özelliklerdir."
+  },
+  {
+    "id": 11,
+    "ders": "Kimya",
+    "konu": "Gazlar",
+    "soru": "Gazların sudaki çözünürlüğü sıcaklık ve basınç değişimiyle nasıl etkilenir?",
+    "secenekler": {
+      "A": "Sıcaklık arttıkça artar, basınç arttıkça azalır.",
+      "B": "Sıcaklık arttıkça azalır, basınç arttıkça artar.",
+      "C": "Her ikisi de arttıkça artar.",
+      "D": "Her ikisi de arttıkça azalır."
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Gazların çözünürlüğü ekzotermiktir, bu yüzden soğukta daha iyi çözünürler (sıcaklık arttıkça çözünürlük azalır). Gaz basıncı arttıkça ise çözünürlükleri artar. (Kola şişesinin soğuk ve kapalı tutulması bu yüzdendir)."
+  },
+  {
+    "id": 12,
+    "ders": "Kimya",
+    "konu": "Kimyasal Denge",
+    "soru": "Kimyasal denge bağıntısı yazılırken aşağıdakilerden hangileri bağıntıya dahil edilmez?",
+    "secenekler": {
+      "A": "Gazlar ve sulu çözeltiler",
+      "B": "Yalnızca sulu çözeltiler",
+      "C": "Katılar ve saf sıvılar",
+      "D": "Yalnızca gazlar"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Denge bağıntısına (Kc) derişimleri sabit olan katılar ve saf sıvılar yazılmaz. Yalnızca gaz fazındaki ve sulu çözeltideki (suda) maddeler yazılır."
+  },
+  {
+    "id": 13,
+    "ders": "Kimya",
+    "konu": "Kimya ve Elektrik",
+    "soru": "Bir elektroliz hücresinde anot ve katotta gerçekleşen tepkimeler sırasıyla hangileridir?",
+    "secenekler": {
+      "A": "Anotta İndirgenme, Katotta Yükseltgenme",
+      "B": "Anotta Yükseltgenme, Katotta İndirgenme",
+      "C": "Her ikisinde de İndirgenme",
+      "D": "Her ikisinde de Yükseltgenme"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Elektrokimyada 'KİMYA' kodlamasını unutma: Katotta İndirgenme (K.İ.), Anotta Yükseltgenme (A.Y.) olur. Bu kural hem piller hem de elektroliz için geçerlidir."
+  },
+  {
+    "id": 14,
+    "ders": "Kimya",
+    "konu": "Organik Kimya",
+    "soru": "Doymuş hidrokarbonlar olan alkanların genel formülü aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "CnH2n",
+      "B": "CnH2n-2",
+      "C": "CnH2n+2",
+      "D": "CnHn"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Alkanlar (parafinler) tekli bağ içerir ve genel formülleri CnH2n+2'dir. Alkenler CnH2n, alkinler ise CnH2n-2 formülüne sahiptir."
+  },
+  {
+    "id": 15,
+    "ders": "Biyoloji",
+    "konu": "Hücre Bölünmesi",
+    "soru": "Mayoz bölünmede yeni genetik kombinasyonların oluşmasını ve kalıtsal çeşitliliği sağlayan temel olay hangisidir?",
+    "secenekler": {
+      "A": "DNA'nın kendini eşlemesi (replikasyon)",
+      "B": "Krossing-over ve homolog kromozomların bağımsız ayrılması",
+      "C": "Kardeş kromatitlerin zıt kutuplara çekilmesi",
+      "D": "İğ ipliklerinin sentezlenmesi"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Mayoz-I'de gerçekleşen krossing-over (gen alışverişi) ve Anafaz-I'deki homolog kromozomların rastgele kutuplara çekilmesi, mayoz bölünmede kalıtsal çeşitliliğin (varyasyon) iki temel sebebidir."
+  },
+  {
+    "id": 16,
+    "ders": "Biyoloji",
+    "konu": "Nükleik Asitler",
+    "soru": "Aşağıdaki özelliklerden hangisi DNA'da bulunmayıp yalnızca RNA molekülüne özgüdür?",
+    "secenekler": {
+      "A": "Fosfodiester bağı içerme",
+      "B": "Adenin ve Guanin bazları bulundurma",
+      "C": "Urasil bazı ve Riboz şekeri bulundurma",
+      "D": "Kendini eşleyebilme"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "DNA deoksiriboz şekeri ve Timin bazı bulundururken, RNA riboz şekeri ve Urasil bazı bulundurur. Ayrıca RNA tek zincirlidir ve kendini eşleyemez (DNA tarafından sentezlenir)."
+  },
+  {
+    "id": 17,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "İnsanda kazanılmış veya kalıtsal refleksleri (göz kırpma, diz kapağı refleksi vb.) kontrol eden merkez neresidir?",
+    "secenekler": {
+      "A": "Beyin kabuğu (Kortex)",
+      "B": "Beyincik",
+      "C": "Omurilik",
+      "D": "Omurilik soğanı"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Omurilik, refleks hareketlerini denetleyen ve yöneten ana merkezdir. Beyin kabuğu ise istemli hareketleri ve öğrenmeyi denetler. Beyincik dengeyi, omurilik soğanı ise hayati sistemleri (solunum, dolaşım vb.) yönetir."
+  },
+  {
+    "id": 18,
+    "ders": "Biyoloji",
+    "konu": "Fotosentez",
+    "soru": "Fotosentez reaksiyonlarında ışığa bağımlı evre kloroplastın hangi bölgesinde gerçekleşir?",
+    "secenekler": {
+      "A": "Stroma (sıvı kısım)",
+      "B": "Granum / Tilakoit Zar",
+      "C": "Dış Zar",
+      "D": "Çekirdek"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Fotosentezde ışık reaksiyonları tilakoit zarda (granada) gerçekleşir ve burada ATP ile NADPH üretilir. Işıktan bağımsız evre (Calvin Döngüsü) ise stromada gerçekleşir ve CO₂ tüketilerek glikoz sentezlenir."
+  },
+  {
+    "id": 19,
+    "ders": "Biyoloji",
+    "konu": "Ekoloji",
+    "soru": "Bir ekolojik besin piramidinde üreticiden son tüketiciye doğru gidildikçe hangisi gerçekleşir?",
+    "secenekler": {
+      "A": "Aktarılan enerji miktarı azalır, biyolojik birikim (zehir) artar.",
+      "B": "Biyokütle artar.",
+      "C": "Aktarılan enerji miktarı artar.",
+      "D": "Birey sayısı genellikle artar."
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Besin zincirinde yukarı çıkıldıkça her basamakta enerjinin yalnızca yaklaşık %10'u bir üst basamağa aktarılır (enerji azalır). Dokularda biriken tarım ilacı gibi toksik maddeler (biyolojik birikim) ise üst basamaklarda en yüksek düzeye ulaşır."
+  },
+  {
+    "id": 20,
+    "ders": "Biyoloji",
+    "konu": "Protein Sentezi",
+    "soru": "Protein sentezini başlatan ilk kodon (mRNA) hangisidir ve hangi amino asidi şifreler?",
+    "secenekler": {
+      "A": "UAA - Stop",
+      "B": "AUG - Metiyonin",
+      "C": "UAG - Stop",
+      "D": "GUG - Valin"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Protein sentezi mRNA üzerindeki AUG başlama (start) kodonu ile başlar. AUG kodonu Metiyonin amino asidini şifreler. UAA, UAG ve UGA ise durdurma (stop) kodonlarıdır, amino asit karşılıkları yoktur."
+  },
+  {
+    "id": 21,
+    "ders": "Biyoloji",
+    "konu": "Bitki Biyolojisi",
+    "soru": "Bitkilerde köklerle alınan su ve mineralleri yapraklara doğru tek yönlü taşıyan cansız borular grubu hangisidir?",
+    "secenekler": {
+      "A": "Ksilem (Odun boruları)",
+      "B": "Floem (Soymuk boruları)",
+      "C": "Kambiyum",
+      "D": "Stoma"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Ksilem (odun borusu) kökten yaprağa su ve mineralleri tek yönlü, hızlı ve cansız hücrelerle taşır. Floem (soymuk borusu) ise fotosentez ürünlerini (organik maddeleri) çift yönlü, yavaş ve canlı hücrelerle taşır."
+  },
+  {
+    "id": 22,
+    "ders": "Biyoloji",
+    "konu": "Sınıflandırma",
+    "soru": "Aşağıdaki özelliklerden hangisi yalnızca memeliler sınıfına ait olup bir canlı türünün memeli olduğunu kesin olarak kanıtlar?",
+    "secenekler": {
+      "A": "Sıcakkanlı (sabit ısılı) olma",
+      "B": "Alveollü akciğerlere sahip olma ve süt bezleri bulundurma",
+      "C": "Kalbinde 4 odacık bulunması",
+      "D": "İç döllenme yapma"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Alveollü akciğerler, süt bezleri, vücut kılları, kaslı diyafram ve olgun alyuvarların çekirdeksiz olması yalnızca MEMELİLERE özgü ayırt edici özelliklerdir. Sıcakkanlılık ve 4 odacıklı kalp kuşlarda da görülür."
+  },
+  {
+    "id": 23,
+    "ders": "Fizik",
+    "konu": "Kuvvet ve Hareket",
+    "soru": "Sürtünmeli yatay bir yolda kayarak ilerleyen bir cisme etki eden sürtünme kuvvetinin büyüklüğü hangisine bağlı DEĞİLDİR?",
+    "secenekler": {
+      "A": "Cismin temas eden yüzey alanına",
+      "B": "Yüzeyin sürtünme katsayısına",
+      "C": "Cismin kütlesine",
+      "D": "Yer çekimi ivmesine"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Kayıp giden (kinetik) sürtünme kuvveti Fs = k . N formülü ile hesaplanır. N tepki kuvvetidir (yatayda m.g'dir). Sürtünme kuvveti yüzey alanının genişliğine bağlı değildir."
+  },
+  {
+    "id": 24,
+    "ders": "Kimya",
+    "konu": "Çözeltiler",
+    "soru": "Saf suya bir miktar yemek tuzu (NaCl) eklenip çözüldüğünde elde edilen çözelti ile ilgili hangisi yanlış olur?",
+    "secenekler": {
+      "A": "Elektrik iletkenliği artar.",
+      "B": "Donmaya başlama sıcaklığı saf suya göre düşer.",
+      "C": "Aynı dış basınçta kaynamaya başlama sıcaklığı yükselir.",
+      "D": "Çözeltinin buhar basıncı saf suya göre artar."
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "Suda uçucu olmayan bir katı (tuz, şeker vb.) çözüldüğünde kaynama noktası yükselir, donma noktası düşer ve çözeltinin buhar basıncı SAF SUYA GÖRE AZALIR."
+  },
+  {
+    "id": 25,
+    "ders": "Biyoloji",
+    "konu": "Hücre Zarından Geçişler",
+    "soru": "Hücre zarından madde taşınması sırasında gerçekleşen Aktif Taşıma ve Kolaylaştırılmış Difüzyon olaylarında hangisi ortaktır?",
+    "secenekler": {
+      "A": "ATP enerjisi harcanması",
+      "B": "Maddenin derişimin az olduğu ortamdan çok olduğu ortama taşınması",
+      "C": "Taşıyıcı proteinlerin görev alması",
+      "D": "Sadece canlı hücrelerde gerçekleşebilmesi"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Hem aktif taşımada hem de kolaylaştırılmış difüzyonda zardaki taşıyıcı proteinler görev alır. Ancak difüzyonda ATP harcanmaz ve çoktan aza taşıma yapılırken, aktif taşımada ATP harcanır ve azdan çoğa taşıma yapılır."
+  },
+  {
+    "id": 26,
+    "ders": "Fizik",
+    "konu": "Basınç",
+    "soru": "Açık hava basıncını ilk kez deniz seviyesinde ve 0 °C'de cıva sütunu kullanarak ölçen bilim insanı kimdir?",
+    "secenekler": {
+      "A": "Pascal",
+      "B": "Toricelli",
+      "C": "Bernoulli",
+      "D": "Galileo"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Barometreyi icat eden ve açık hava basıncını deniz seviyesinde 76 cm-Hg olarak ölçen bilim insanı Evangelista Toricelli'dir."
+  },
+  {
+    "id": 27,
+    "ders": "Kimya",
+    "konu": "Atom Modelleri",
+    "soru": "Temel haldeki bir atomun dışarıdan enerji alarak elektronunun daha yüksek enerjili bir düzeye geçmesi olayına ne ad verilir?",
+    "secenekler": {
+      "A": "Uyarılma (Absorbsiyon)",
+      "B": "Işıma (Emisyon)",
+      "C": "İyonlaşma",
+      "D": "Kovalent Bağlanma"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Atomun dışarıdan enerji alıp üst enerji seviyelerine geçmesine uyarılma veya absorbsiyon (soğurma) denir. Uyarılmış atom kararsızdır ve temel hale dönerken dışarıya foton yayar (emisyon/ışıma)."
+  },
+  {
+    "id": 28,
+    "ders": "Biyoloji",
+    "konu": "Hücresel Solunum",
+    "soru": "Oksijenli solunum, oksijensiz solunum ve fermantasyon olaylarının tamamında ortak olarak gerçekleşen ilk evre hangisidir?",
+    "secenekler": {
+      "A": "Krebs Döngüsü",
+      "B": "Glikoliz",
+      "C": "Elektron Taşıma Sistemi (ETS)",
+      "D": "Asetil-CoA oluşumu"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Glikozun pirüvata kadar yıkıldığı Glikoliz evresi, tüm hücresel solunum ve fermantasyon çeşitlerinde sitoplazmada ortak olarak gerçekleşir. Glikoliz enzimlerinin üretilmesini sağlayan genler tüm canlılarda ortaktır."
+  },
+  {
+    "id": 29,
+    "ders": "Fizik",
+    "konu": "Elektrik ve Manyetizma",
+    "soru": "Üzerinden akım geçen düz bir telin çevresinde oluşan manyetik alanın yönü hangi kural ile bulunur?",
+    "secenekler": {
+      "A": "Sol el kuralı",
+      "B": "Sağ el kuralı",
+      "C": "Merkezkaç kuralı",
+      "D": "Lenz Kanunu"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Sağ el kuralında başparmak akım yönünü, teli saran dört parmak ise oluşan manyetik alan dolanım yönünü gösterir."
+  },
+  {
+    "id": 30,
+    "ders": "Biyoloji",
+    "konu": "Sindirimi Kolaylaştırma",
+    "soru": "Karaciğer tarafından üretilen safra salgısının sindirimdeki görevi nedir?",
+    "secenekler": {
+      "A": "Proteinlerin kimyasal sindirimini başlatmak",
+      "B": "Yağların mekanik (fiziksel) sindirimini gerçekleştirmek",
+      "C": "Karbonhidratları glikoza parçalamak",
+      "D": "Mide asidini nötralize eden enzimler içermek"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Safra bir ENZİM DEĞİLDİR, dolayısıyla kimyasal sindirim yapmaz. Yağ damlacıklarını daha küçük parçalara ayırarak mekanik sindirim yapar ve lipaz enziminin etki edeceği yüzeyi genişletir."
+  },
+  {
+    "id": 31,
+    "ders": "Dil Bilgisi",
+    "konu": "Ses Bilgisi",
+    "soru": "Sert ünsüzlerden biriyle (f, s, t, k, ç, ş, h, p) biten sözcüklere yumuşak ünsüzlerle (c, d, g) başlayan ek getirildiğinde ekin sertleşmesi olayına ne denir?",
+    "secenekler": {
+      "A": "Ünsüz Yumuşaması",
+      "B": "Ünsüz Benzeşmesi (Sertleşmesi)",
+      "C": "Ses Düşmesi",
+      "D": "Ünlü Daralması"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Fıstıkçı Şahap sert ünsüzleriyle biten kelimelere c, d, g ile başlayan ek gelince, bunlar ç, t, k seslerine dönüşür (Örn: dolap-da -> dolapta, yavaş-ca -> yavaşça). Buna ünsüz benzeşmesi/sertleşmesi denir."
+  },
+  {
+    "id": 32,
+    "ders": "Dil Bilgisi",
+    "konu": "Yazım Kuralları",
+    "soru": "Aşağıdaki cümlelerin hangisinde 'de/da' bağlacının yazımı ile ilgili bir hata yapılmıştır?",
+    "secenekler": {
+      "A": "Bize bu konuda sen de yardım etmelisin.",
+      "B": "Kitabın bende kalan kısmını yarın getireceğim.",
+      "C": "Bu sınavda başarılı olmak hiç de kolay değil.",
+      "D": "O kadar yorulduki yolda da uyuya kaldı."
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "D seçeneğinde hem '-ki' bağlacı (yoruldu ki) ayrı yazılmalı hem de 'uyuyakaldı' kurallı birleşik fiili bitişik yazılmalıdır. Ayrıca 'yolda da' yazımı doğrudur (bağlaç olan da ayrıdır)."
+  },
+  {
+    "id": 33,
+    "ders": "Dil Bilgisi",
+    "konu": "Yazım Kuralları",
+    "soru": "Türkçe kısaltmalara getirilen eklerin belirlenmesinde aşağıdakilerden hangisi esas alınır?",
+    "secenekler": {
+      "A": "Kısaltmanın açılımının son kelimesi",
+      "B": "Kısaltmanın son harfinin okunuşu",
+      "C": "Kısaltmadaki sesli harflerin uyumu",
+      "D": "Kısaltmanın kelime gibi okunup okunmaması"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Büyük harfle yapılan kısaltmalara getirilen ekler, kısaltmanın son harfinin okunuşuna göre belirlenir. Örneğin, TDK'nın değil 'TDK'nin' (te-de-ke) olmalıdır. Türkçe'de harfler 'ka' değil 'ke' diye okunur."
+  },
+  {
+    "id": 34,
+    "ders": "Dil Bilgisi",
+    "konu": "Noktalama İşaretleri",
+    "soru": "Cümle içinde zarf-fiil eki almış kelimelerden sonra hangi durumda virgül (,) KULLANILMAZ?",
+    "secenekler": {
+      "A": "Cümlede sadece tek bir zarf-fiil varsa",
+      "B": "Cümle çok uzunsa",
+      "C": "Zarf-fiil cümlenin en başında ise",
+      "D": "Zarf-fiilden sonra isim geliyorsa"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Metin içinde zarf-fiil eki (-ip, -erek, -meden...) almış kelimelerden sonra virgül konmaz. Ancak art arda gelen zarf-fiiller varsa aralarına konabilir. Tek başına kullanılan zarf-fiilden sonra virgül koymak yazım hatasıdır."
+  },
+  {
+    "id": 35,
+    "ders": "Dil Bilgisi",
+    "konu": "Yazım Kuralları",
+    "soru": "'Alt, üst, üzeri' sözcüklerinin birleşik kelimelerde bitişik yazılmasının kuralı nedir?",
+    "secenekler": {
+      "A": "Her zaman bitişik yazılırlar.",
+      "B": "Somut olarak yer bildirmedikleri zaman bitişik yazılırlar.",
+      "C": "Somut olarak yer bildirdikleri zaman bitişik yazılırlar.",
+      "D": "Sadece cümlenin başında olduklarında bitişik yazılırlar."
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Somut olarak yer belirtmeyen 'alt, üst, üzeri' sözleri bitişik yazılır (Örn: bilinçaltı, gözaltı (gözetim), akşamüstü, ayaküstü). Somut yer bildiriyorsa ayrı yazılır (Örn: toprak altı, su altı)."
+  },
+  {
+    "id": 36,
+    "ders": "Dil Bilgisi",
+    "konu": "Sözcük Türleri",
+    "soru": "'Güzel' sözcüğü aşağıdaki cümlelerin hangisinde 'zarf (belirteç)' görevinde kullanılmıştır?",
+    "secenekler": {
+      "A": "Güzel günler bizi bekliyor, inancını kaybetme.",
+      "B": "Yazar, son romanında oldukça güzel bir dil kullanmış.",
+      "C": "Toplantıda konuyu herkesin anlayacağı şekilde güzel anlattı.",
+      "D": "Bu güzel tabloyu salonun baş köşesine asmalıyız."
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "İsimleri niteleyen kelimeler sıfat (güzel günler, güzel dil, güzel tablo), fiil veya fiilimsileri niteleyen/belirten kelimeler ise zarftır. C seçeneğinde 'güzel' kelimesi 'anlattı' fiilini nitelediği için zarftır."
+  },
+  {
+    "id": 37,
+    "ders": "Dil Bilgisi",
+    "konu": "Ses Bilgisi",
+    "soru": "'Kıvrım' sözcüğünün türetilmesi sırasında gerçekleşen ses olayı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Ünsüz Düşmesi",
+      "B": "Ünlü Düşmesi",
+      "C": "Ünlü Türemesi",
+      "D": "Ünsüz Yumuşaması"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "'Kıvrım' kelimesinin kökü 'kıvırmak' fiilidir. Kıvır-ım eki alarak türetilirken ortadaki dar ünlü düşer: kıvır-ım -> kıvrım (Ünlü Düşmesi)."
+  },
+  {
+    "id": 38,
+    "ders": "Dil Bilgisi",
+    "konu": "Sözcük Türleri",
+    "soru": "Aşağıdaki cümlelerin hangisinde 'o' sözcüğü 'işaret zamiri' olarak kullanılmıştır?",
+    "secenekler": {
+      "A": "O kalemi arkadaşıma hediye etmek için aldım.",
+      "B": "O, dünkü toplantıya katılmayan tek kişiydi.",
+      "C": "O sokağa tek başına gitmeni istemiyorum.",
+      "D": "O konuyu seninle daha sonra detaylıca konuşuruz."
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "İşaret sıfatı bir ismi işaret eder (o kalem, o sokak, o konu). İşaret zamiri ise ismin yerini tutar. B şıkkında 'o' bir kişinin yerini tuttuğu için kişi zamiridir (veya cansız varlıksa işaret zamiridir). Ancak diğer şıklar tamamen sıfattır."
+  },
+  {
+    "id": 39,
+    "ders": "Dil Bilgisi",
+    "konu": "Cümle Ögeleri",
+    "soru": "Cümlenin yüklemine sorulan 'Ne, kim' soruları sırasıyla hangi ögeleri buldurmaya yöneliktir?",
+    "secenekler": {
+      "A": "Özne - Belirtili Nesne",
+      "B": "Özne - Belirtisiz Nesne",
+      "C": "Belirtisiz Nesne - Özne",
+      "D": "Özne - Özne"
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "Yükleme sorulan İLK 'ne, kim' soruları ÖZNE'yi buldurur. Özneyi bulduktan sonra yükleme sorulan ikinci 'ne' sorusu ise BELİRTİSİZ NESNE'yi buldurur. Karıştırmamak için önce özne, sonra nesne bulunmalıdır."
+  },
+  {
+    "id": 40,
+    "ders": "Dil Bilgisi",
+    "konu": "Sözcükte Yapı",
+    "soru": "Aşağıdaki altı çizili eklerden hangisi bir 'iyelik (aitlik) eki'dir?",
+    "secenekler": {
+      "A": "Dün akşam nihayet yeni <u>evim</u> bitti.",
+      "B": "Bu ödevi tek başıma ben <u>yaptım</u>.",
+      "C": "Sabah erkenden okula <u>gittim</u>.",
+      "D": "Söylediğin her şeyi çok iyi <u>anladım</u>."
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "İyelik ekleri isimlere gelir ve ismin kime ait olduğunu belirtir (benim evim). Fiillere gelen kişi ekleri ise şahıs ekleridir ve işi kimin yaptığını gösterir (yaptım, gittim, anladım -> eylemi ben yaptım, şahıs eki)."
+  },
+  {
+    "id": 41,
+    "ders": "Dil Bilgisi",
+    "konu": "Noktalama İşaretleri",
+    "soru": "Bir cümlede noktalı virgül (;) kullanılabilmesi için o cümlede öncelikle hangisinin bulunması zorunludur?",
+    "secenekler": {
+      "A": "İki nokta (:)",
+      "B": "En az bir virgül (,)",
+      "C": "Üç nokta (...)",
+      "D": "Tırnak işareti (\"\")"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Noktalı virgül, virgülün yetersiz kaldığı gruplandırma veya sıralı cümleleri ayırmak için virgüle yardımcı olarak gelir. İçinde hiç virgül olmayan bir cümlede doğrudan noktalı virgül kullanılamaz."
+  },
+  {
+    "id": 42,
+    "ders": "Dil Bilgisi",
+    "konu": "Yazım Kuralları",
+    "soru": "Aşağıdaki yer adlarının yazımı ile ilgili kullanımların hangisinde yazım hatası vardır?",
+    "secenekler": {
+      "A": "Atatürk Bulvarı'nda büyük bir yürüyüş düzenlendi.",
+      "B": "Bizim ev Çiçek sokağının hemen girişindedir.",
+      "C": "Taksim Meydanı her zaman kalabalıktır.",
+      "D": "Bahçelievler Mahallesi sakinleri bu durumdan şikayetçi."
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Mahalle, meydan, bulvar, cadde, sokak adlarında geçen 'Mahalle, Meydan, Bulvar, Cadde, Sokak' sözcükleri büyük harfle başlar. Dolayısıyla 'Çiçek Sokağı'nın' şeklinde yazılmalıdır."
+  },
+  {
+    "id": 43,
+    "ders": "Dil Bilgisi",
+    "konu": "Fiilimsiler",
+    "soru": "Aşağıdakilerden hangisi bir sıfat-fiil (ortaç) eki DEĞİLDİR?",
+    "secenekler": {
+      "A": "-an / -en",
+      "B": "-ası / -esi",
+      "C": "-ip / -ip",
+      "D": "-ecek / -acak"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Sıfat-fiil ekleri 'An-ası-mezar-dikecek-miş' şeklinde kodlanır. C seçeneğindeki '-ip/-üp' eki ise bir zarf-fiil (bağ-fiil) ekidir."
+  },
+  {
+    "id": 44,
+    "ders": "Dil Bilgisi",
+    "konu": "Ses Bilgisi",
+    "soru": "Aşağıdaki sözcüklerden hangisinde '-yor' eki geldiğinde ünlü daralması gerçekleşmiştir?",
+    "secenekler": {
+      "A": "Gidiyor",
+      "B": "Bakıyor",
+      "C": "Bekliyor",
+      "D": "Gülüyor"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Ünlü daralması, sonu 'a, e' geniş ünlüleriyle biten fiillere '-yor' geldiğinde olur. 'Beklemek' fiili 'e' ile biter. Bekle-yor -> Bekliyor (daralma var). Git-i-yor, bak-ı-yor kelimelerindeki 'i, ı' sesleri ise yardımcı sestir, daralma değildir."
+  },
+  {
+    "id": 45,
+    "ders": "Dil Bilgisi",
+    "konu": "Sözcükte Yapı",
+    "soru": "Dil bilgisinde bir sözcüğün en az bir 'yapım eki' almış haline ne ad verilir?",
+    "secenekler": {
+      "A": "Kök",
+      "B": "Gövde",
+      "C": "Basit sözcük",
+      "D": "Birleşik sözcük"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Sözcüğün yapım eki almamış haline kök, en az bir yapım eki alarak türemiş haline ise GÖVDE denir. Gövdeye tekrar yapım ekleri getirilebilir (Örn: göz (kök) -> göz-lük (gövde) -> göz-lük-çü (gövdeden türemiş))."
+  },
+  {
+    "id": 46,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdakilerden hangisi fiziksel sindirime örnektir?",
+    "secenekler": {
+      "A": "Proteinlerin aminoasitlere ayrılması",
+      "B": "Nişastanın glikoza dönüşmesi",
+      "C": "Besinlerin dişlerle parçalanması",
+      "D": "Yağların gliserol ve yağ asidine ayrılması"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Fiziksel sindirim besinlerin kimyasal yapısı değişmeden küçük parçalara ayrılmasıdır. Çiğneme fiziksel sindirime örnektir."
+  },
+  {
+    "id": 47,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdaki organlardan hangisi hem mekanik hem de kimyasal sindirimin gerçekleştiği yapılardan biridir?",
+    "secenekler": {
+      "A": "Yutak",
+      "B": "Mide",
+      "C": "Kalın bağırsak",
+      "D": "Anüs"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Midede kas hareketleriyle mekanik sindirim, mide özsuyu enzimleriyle kimyasal sindirim gerçekleşir."
+  },
+  {
+    "id": 48,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "İnce bağırsakta emilen yağ asitleri ve gliserol ilk olarak hangi yapıya geçer?",
+    "secenekler": {
+      "A": "Atardamar",
+      "B": "Toplardamar",
+      "C": "Lenf kılcalı",
+      "D": "Mide"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Yağların sindirim ürünleri villuslardaki lenf kılcallarına geçer."
+  },
+  {
+    "id": 49,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdaki enzimlerden hangisi protein sindiriminde görev alır?",
+    "secenekler": {
+      "A": "Amilaz",
+      "B": "Pepsin",
+      "C": "Lipaz",
+      "D": "Maltaz"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Pepsin midede salgılanır ve proteinlerin sindirimini başlatır."
+  },
+  {
+    "id": 50,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Safra sıvısının görevi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Protein sindirmek",
+      "B": "Karbonhidrat sindirmek",
+      "C": "Yağları küçük damlacıklara ayırmak",
+      "D": "Vitamin üretmek"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Safra enzime sahip değildir. Yağları emülsifiye ederek yüzey alanını artırır."
+  },
+  {
+    "id": 51,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdakilerden hangisi ince bağırsağın görevlerinden biridir?",
+    "secenekler": {
+      "A": "Su emilimini tamamen gerçekleştirmek",
+      "B": "Besin monomerlerini emmek",
+      "C": "Safra üretmek",
+      "D": "Üre sentezlemek"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "İnce bağırsak sindirimin büyük kısmının ve besin emiliminin gerçekleştiği organdır."
+  },
+  {
+    "id": 52,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Karaciğer ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "secenekler": {
+      "A": "Safra üretir.",
+      "B": "Glikojen depolar.",
+      "C": "Sindirim enzimi üretir.",
+      "D": "Zehirli maddelerin etkisini azaltır."
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Karaciğer safra üretir ancak sindirim enzimi üretmez."
+  },
+  {
+    "id": 53,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdaki yapılardan hangisinde villus bulunur?",
+    "secenekler": {
+      "A": "Mide",
+      "B": "Kalın bağırsak",
+      "C": "İnce bağırsak",
+      "D": "Yutak"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Villuslar ince bağırsağın emilim yüzeyini artırır."
+  },
+  {
+    "id": 54,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Ağızda başlayan kimyasal sindirim aşağıdaki besinlerden hangisine aittir?",
+    "secenekler": {
+      "A": "Protein",
+      "B": "Yağ",
+      "C": "Vitamin",
+      "D": "Karbonhidrat"
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "Tükürük amilazı ağızda karbonhidrat sindirimini başlatır."
+  },
+  {
+    "id": 55,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Pankreasın sindirim sistemindeki görevi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Safra depolamak",
+      "B": "Sindirim enzimi üretmek",
+      "C": "Besin emilimini sağlamak",
+      "D": "Peristaltik hareket yapmak"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Pankreas karbonhidrat, protein ve yağların sindirimi için enzim üretir."
+  },
+  {
+    "id": 56,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Kalın bağırsağın temel görevi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Protein sindirimi",
+      "B": "Yağ sindirimi",
+      "C": "Su ve mineral emilimi",
+      "D": "Safra üretimi"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Kalın bağırsakta su, mineral ve bazı vitaminler emilir."
+  },
+  {
+    "id": 57,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdakilerden hangisi sindirim enzimlerinin ortak özelliğidir?",
+    "secenekler": {
+      "A": "Canlılık olaylarında tüketilirler.",
+      "B": "Her sıcaklıkta çalışırlar.",
+      "C": "Belirli maddelere etki ederler.",
+      "D": "Yapılarında DNA bulunur."
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Enzimler substrata özgüdür, yani belirli maddeler üzerinde etkili olurlar."
+  },
+  {
+    "id": 58,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Midede bulunan hidroklorik asidin görevi aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Yağları sindirmek",
+      "B": "Pepsini aktif hale getirmek",
+      "C": "Karbonhidrat sindirimi yapmak",
+      "D": "Vitamin emilimini sağlamak"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "HCl mide ortamını asidik yapar ve pepsinojeni aktif pepsine dönüştürür."
+  },
+  {
+    "id": 59,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdaki besinlerden hangisinin kimyasal sindirimi midede başlamaz?",
+    "secenekler": {
+      "A": "Protein",
+      "B": "Karbonhidrat",
+      "C": "Et",
+      "D": "Yumurta akı"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Karbonhidratların kimyasal sindirimi ağızda başlar."
+  },
+  {
+    "id": 60,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Aşağıdaki yapılardan hangisi sindirim kanalına dahil değildir?",
+    "secenekler": {
+      "A": "Yemek borusu",
+      "B": "Karaciğer",
+      "C": "İnce bağırsak",
+      "D": "Mide"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Karaciğer yardımcı sindirim organıdır, sindirim kanalında yer almaz."
+  },
+  {
+    "id": 61,
+    "ders": "Biyoloji",
+    "konu": "Sindirim Sistemi",
+    "soru": "Peristaltik hareket aşağıdaki yapılardan hangisinde görülür?",
+    "secenekler": {
+      "A": "Kemik",
+      "B": "Yemek borusu",
+      "C": "Akciğer",
+      "D": "Böbrek"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Peristaltik hareket besinlerin sindirim kanalında ilerlemesini sağlar."
+  },
+  {
+    "id": 62,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdakilerden hangisi insanlarda boşaltım sistemi organlarından biridir?",
+    "secenekler": {
+      "A": "Akciğer",
+      "B": "Karaciğer",
+      "C": "Böbrek",
+      "D": "Mide"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Böbrekler kandaki atık maddeleri süzerek idrar oluşturur."
+  },
+  {
+    "id": 63,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "İdrarın oluştuğu temel organ aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Üreter",
+      "B": "Üretra",
+      "C": "Mesane",
+      "D": "Böbrek"
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "İdrar nefronlarda oluşturulur ve böbreklerde toplanır."
+  },
+  {
+    "id": 64,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdakilerden hangisi böbreğin yapısal ve işlevsel birimidir?",
+    "secenekler": {
+      "A": "Alveol",
+      "B": "Nefron",
+      "C": "Villus",
+      "D": "Nöron"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Nefron, süzülme ve geri emilim olaylarının gerçekleştiği birimdir."
+  },
+  {
+    "id": 65,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdaki maddelerden hangisi insanlarda temel azotlu boşaltım atığıdır?",
+    "secenekler": {
+      "A": "Amonyak",
+      "B": "Üre",
+      "C": "Karbondioksit",
+      "D": "Oksijen"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "İnsanlarda proteinlerin parçalanması sonucu oluşan azotlu atık çoğunlukla üredir."
+  },
+  {
+    "id": 66,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Kanı süzerek idrar oluşumunu başlatan yapı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Mesane",
+      "B": "Malpighi cisimciği",
+      "C": "Üreter",
+      "D": "Üretra"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Malpighi cisimciği glomerulus ve Bowman kapsülünden oluşur."
+  },
+  {
+    "id": 67,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "İdrarı böbrekten mesaneye taşıyan yapı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Üreter",
+      "B": "Üretra",
+      "C": "Nefron",
+      "D": "Atardamar"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Üreterler böbrek ile mesane arasında bağlantı kurar."
+  },
+  {
+    "id": 68,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "İdrarın depolandığı yapı aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Böbrek",
+      "B": "Üreter",
+      "C": "Mesane",
+      "D": "Bowman kapsülü"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Mesane, idrarın geçici olarak depolandığı kaslı yapıdır."
+  },
+  {
+    "id": 69,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdakilerden hangisi geri emilim olayının gerçekleştiği yapılardan biridir?",
+    "secenekler": {
+      "A": "Nefron kanalcığı",
+      "B": "Mesane",
+      "C": "Üreter",
+      "D": "Üretra"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Su, glikoz ve minerallerin büyük kısmı nefron kanalcıklarında geri emilir."
+  },
+  {
+    "id": 70,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Sağlıklı bir insanın idrarında aşağıdakilerden hangisinin bulunması beklenmez?",
+    "secenekler": {
+      "A": "Su",
+      "B": "Üre",
+      "C": "Glikoz",
+      "D": "Mineral"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Glikoz normalde tamamen geri emilir. İdrarda bulunması diyabet belirtisi olabilir."
+  },
+  {
+    "id": 71,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdakilerden hangisi boşaltıma yardımcı organlardan biridir?",
+    "secenekler": {
+      "A": "Dalak",
+      "B": "Akciğer",
+      "C": "Pankreas",
+      "D": "Mide"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Akciğerler karbondioksit ve su buharını uzaklaştırarak boşaltıma yardımcı olur."
+  },
+  {
+    "id": 72,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Terleme ile aşağıdaki maddelerden hangisi vücuttan uzaklaştırılır?",
+    "secenekler": {
+      "A": "Oksijen",
+      "B": "Nişasta",
+      "C": "Üre ve su",
+      "D": "Protein"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Deri, terleme yoluyla su, tuz ve az miktarda üre atar."
+  },
+  {
+    "id": 73,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Bowman kapsülünde gerçekleşen olay aşağıdakilerden hangisidir?",
+    "secenekler": {
+      "A": "Geri emilim",
+      "B": "Salgılama",
+      "C": "Süzülme",
+      "D": "Sindirim"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Kan plazmasının süzülmesi Bowman kapsülünde gerçekleşir."
+  },
+  {
+    "id": 74,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdakilerden hangisi böbreklerin görevlerinden biri değildir?",
+    "secenekler": {
+      "A": "Su dengesini sağlamak",
+      "B": "İyon dengesini düzenlemek",
+      "C": "Kanı süzmek",
+      "D": "Besinleri sindirmek"
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "Besinlerin sindirimi sindirim sistemi organlarında gerçekleşir."
+  },
+  {
+    "id": 75,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Proteinlerin fazla tüketilmesi aşağıdakilerden hangisinin miktarını artırabilir?",
+    "secenekler": {
+      "A": "Oksijen",
+      "B": "Üre",
+      "C": "Vitamin",
+      "D": "Glikojen"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Protein yıkımı sonucu azotlu atık olarak üre oluşur."
+  },
+  {
+    "id": 76,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdaki yapılardan hangisi idrarın vücuttan atılmasını sağlar?",
+    "secenekler": {
+      "A": "Üretra",
+      "B": "Üreter",
+      "C": "Bowman kapsülü",
+      "D": "Glomerulus"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Üretra idrarın dışarı atıldığı son kanaldır."
+  },
+  {
+    "id": 77,
+    "ders": "Biyoloji",
+    "konu": "Boşaltım Sistemi",
+    "soru": "Aşağıdaki maddelerden hangisi tamamen geri emilen maddelerden biridir?",
+    "secenekler": {
+      "A": "Üre",
+      "B": "Su",
+      "C": "Glikoz",
+      "D": "Amonyak"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Sağlıklı bireylerde glikoz tamamen geri emilir ve idrarda bulunmaz."
+  },
+  {
+    "id": 78,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidakilerden hangisi merkezi sinir sistemine aittir?",
+    "secenekler": {
+      "A": "Omurilik",
+      "B": "Sinirler",
+      "C": "Reseptor",
+      "D": "Kas"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Merkezi sinir sistemi beyin ve omurilikten olusur."
+  },
+  {
+    "id": 79,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Sinir hucresine verilen isim asagidakilerden hangisidir?",
+    "secenekler": {
+      "A": "Nefron",
+      "B": "Noron",
+      "C": "Alveol",
+      "D": "Osteosit"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Sinir sisteminin temel yapi ve gorev birimi norondur."
+  },
+  {
+    "id": 80,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidaki yapilardan hangisi impulsu hucre govdesine tasir?",
+    "secenekler": {
+      "A": "Akson",
+      "B": "Miyelin kilif",
+      "C": "Dendrit",
+      "D": "Sinaps"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Dendritler uyartilari hucre govdesine tasir."
+  },
+  {
+    "id": 81,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidakilerden hangisi impulsun iletim hizini artirir?",
+    "secenekler": {
+      "A": "Miyelin kilif",
+      "B": "Sinaps sayisinin artmasi",
+      "C": "Aksonun kisa olmasi",
+      "D": "Dendrit sayisinin azalmasi"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Miyelin kilif impulsun sicrayan sekilde iletilmesini saglar ve hizi artirir."
+  },
+  {
+    "id": 82,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Refleks merkezi asagidakilerden hangisidir?",
+    "secenekler": {
+      "A": "Beyincik",
+      "B": "Omurilik",
+      "C": "Uc beyin",
+      "D": "Hipotalamus"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Basit reflekslerin merkezi omuriliktir."
+  },
+  {
+    "id": 83,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Vucudun dengesini saglamakla gorevli yapi asagidakilerden hangisidir?",
+    "secenekler": {
+      "A": "Omurilik",
+      "B": "Uc beyin",
+      "C": "Beyincik",
+      "D": "Omurilik sogani"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Beyincik denge ve kas koordinasyonunu saglar."
+  },
+  {
+    "id": 84,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Solunum ve kalp atisi gibi yasamsal olaylari duzenleyen yapi asagidakilerden hangisidir?",
+    "secenekler": {
+      "A": "Omurilik sogani",
+      "B": "Beyincik",
+      "C": "Talamus",
+      "D": "Uc beyin"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Omurilik sogani istemsiz calisan yasamsal faaliyetleri kontrol eder."
+  },
+  {
+    "id": 85,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidakilerden hangisi cevresel sinir sistemine dahildir?",
+    "secenekler": {
+      "A": "Beyin",
+      "B": "Omurilik",
+      "C": "Sinirler",
+      "D": "Beyincik"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Cevresel sinir sistemi merkezi sinir sistemi disindaki sinirlerden olusur."
+  },
+  {
+    "id": 86,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Impulsun bir norondan digerine aktarildigi bolgeye ne ad verilir?",
+    "secenekler": {
+      "A": "Dendrit",
+      "B": "Sinaps",
+      "C": "Akson",
+      "D": "Reseptor"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Sinapslarda norotransmitter maddeler gorev yapar."
+  },
+  {
+    "id": 87,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidakilerden hangisi istemli hareketlerin kontrol edildigi bolgedir?",
+    "secenekler": {
+      "A": "Uc beyin",
+      "B": "Omurilik sogani",
+      "C": "Omurilik",
+      "D": "Hipofiz"
+    },
+    "dogru_cevap": "A",
+    "hap_bilgi": "Dusunme, ogrenme ve istemli hareketlerin kontrolu uc beyinde gerceklesir."
+  },
+  {
+    "id": 88,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Miyelin kilifin yapisinda gorev alan hucre asagidakilerden hangisidir?",
+    "secenekler": {
+      "A": "Alyuvar",
+      "B": "Schwann hucresi",
+      "C": "Nefron",
+      "D": "Kas hucresi"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Schwann hucreleri cevresel sinirlerde miyelin kilif olusturur."
+  },
+  {
+    "id": 89,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidakilerden hangisi reseptor organlardan biri degildir?",
+    "secenekler": {
+      "A": "Goz",
+      "B": "Kulak",
+      "C": "Deri",
+      "D": "Mide"
+    },
+    "dogru_cevap": "D",
+    "hap_bilgi": "Goz, kulak ve deri uyartilari algilayan reseptor organlardir."
+  },
+  {
+    "id": 90,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Refleks yayi siralamasi asagidakilerden hangisinde dogru verilmistir?",
+    "secenekler": {
+      "A": "Efektor -> Reseptor -> Duyu noronu",
+      "B": "Reseptor -> Duyu noronu -> Ara noron -> Motor noron -> Efektor",
+      "C": "Motor noron -> Reseptor -> Ara noron",
+      "D": "Ara noron -> Duyu noronu -> Efektor"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Refleks yayi uyartinin hizli ve istemsiz cevap olusturmasini saglar."
+  },
+  {
+    "id": 91,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Asagidakilerden hangisi otonom sinir sisteminin kontrol ettigi olaylardan biridir?",
+    "secenekler": {
+      "A": "Yazi yazma",
+      "B": "Kosma",
+      "C": "Kalp atisi",
+      "D": "Konusma"
+    },
+    "dogru_cevap": "C",
+    "hap_bilgi": "Otonom sinir sistemi istemsiz calisan organlari kontrol eder."
+  },
+  {
+    "id": 92,
+    "ders": "Biyoloji",
+    "konu": "Sinir Sistemi",
+    "soru": "Bir noronda impulsun izledigi yol asagidakilerden hangisidir?",
+    "secenekler": {
+      "A": "Akson -> Dendrit -> Hucre govdesi",
+      "B": "Dendrit -> Hucre govdesi -> Akson",
+      "C": "Hucre govdesi -> Dendrit -> Akson",
+      "D": "Akson -> Hucre govdesi -> Dendrit"
+    },
+    "dogru_cevap": "B",
+    "hap_bilgi": "Impuls dendritten alinir, hucre govdesinden gecer ve aksonla iletilir."
+  }
+]
