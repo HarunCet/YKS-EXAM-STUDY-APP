@@ -49,12 +49,6 @@ YKS (Yükseköğretim Kurumları Sınavı) hazırlık sürecindeki öğrencileri
 * **YKS 2026 Hedefi:** Sınavın başlama anı olan **20 Haziran 2026 Cumartesi 10:15** tarihine odaklanmış canlı sayaç.
 * Gün, saat, dakika ve saniye kırılımlarının yanı sıra toplam kalan saati net bir şekilde görebilme seçeneği.
 
-
-### 🔐 5. Güvenli Üyelik ve Altyapı (Auth & Database)
-* **Supabase SSR:** `@supabase/ssr` paketi ile sunucu taraflı çerez yönetimi ve güvenli kimlik doğrulama (Giriş/Kayıt/Çıkış).
-* **Veri Eşitleme:** Kullanıcı ilerlemeleri, notlar ve yarışma geçmişi Supabase veritabanında tamamen bulut üzerinde saklanır.
-* **Dark Mode & Light Mode:** Göz yormayan, Tailwind CSS v4 tabanlı modern gece ve gündüz teması.
-
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
