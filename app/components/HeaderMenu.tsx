@@ -2,10 +2,13 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { createClient } from '@/utils/supabase/client';
 
 export default function HeaderMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isGuest, setIsGuest] = useState(true);
   const drawerRef = useRef<HTMLDivElement>(null);
+  const supabase = createClient();
 
   // Close on Escape key press
   useEffect(() => {
@@ -21,6 +24,15 @@ export default function HeaderMenu() {
       document.body.style.overflow = '';
     };
   }, [isOpen]);
+
+  // Check user session
+  useEffect(() => {
+    async function checkUser() {
+      const { data: { user } } = await supabase.auth.getUser();
+      setIsGuest(!user);
+    }
+    checkUser();
+  }, [supabase]);
 
   // Close on click outside drawer content
   const handleBackdropClick = (e: React.MouseEvent) => {
@@ -68,7 +80,7 @@ export default function HeaderMenu() {
               </h2>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                className="text-zinc-400 hover:text-zinc-650 dark:hover:text-zinc-250 p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
                 aria-label="Kapat"
               >
                 <svg
@@ -126,16 +138,17 @@ export default function HeaderMenu() {
 
               {/* Çalışma Paneli Link */}
               <Link
-                href="/calisma-paneli"
+                href={isGuest ? "/login" : "/calisma-paneli"}
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-4 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900 hover:bg-violet-50/50 dark:hover:bg-violet-950/20 hover:border-violet-200 dark:hover:border-violet-900/50 transition-all group"
               >
-                <div className="h-10 w-10 shrink-0 bg-violet-100 dark:bg-violet-900/30 text-violet-650 dark:text-violet-400 rounded-lg flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform">
+                <div className="h-10 w-10 shrink-0 bg-violet-100 dark:bg-violet-900/30 text-violet-650 dark:text-violet-400 rounded-lg flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform relative">
                   📋
+                  {isGuest && <span className="absolute -top-1 -right-1 text-xs">🔒</span>}
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 text-sm group-hover:text-violet-650 dark:group-hover:text-violet-400 transition-colors">
-                    Çalışma Paneli
+                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 text-sm group-hover:text-violet-650 dark:group-hover:text-violet-400 transition-colors flex items-center gap-1.5">
+                    Çalışma Paneli {isGuest && <span className="text-[10px] text-zinc-400 font-normal">(Giriş Gerekli)</span>}
                   </h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
                     Haftalık görevler ve ders notları
@@ -143,21 +156,22 @@ export default function HeaderMenu() {
                 </div>
               </Link>
 
-              {/* Sorular Link */}
+              {/* Soru & Deneme Takibi Link */}
               <Link
-                href="/sorular"
+                href={isGuest ? "/login" : "/sorular"}
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-4 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900 hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 hover:border-emerald-200 dark:hover:border-emerald-900/50 transition-all group"
               >
-                <div className="h-10 w-10 shrink-0 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-lg flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform">
+                <div className="h-10 w-10 shrink-0 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-lg flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform relative">
                   ✏️
+                  {isGuest && <span className="absolute -top-1 -right-1 text-xs">🔒</span>}
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 text-sm group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                    Sorular
+                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 text-sm group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+                    Soru & Deneme Takibi {isGuest && <span className="text-[10px] text-zinc-400 font-normal">(Giriş Gerekli)</span>}
                   </h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
-                    Çözülen soruların takibi
+                    Yanlış soru defteri ve TYT/AYT deneme takibi
                   </p>
                 </div>
               </Link>
@@ -183,16 +197,17 @@ export default function HeaderMenu() {
 
               {/* Sayısal Fen Düellosu Link */}
               <Link
-                href="/yarisma"
+                href={isGuest ? "/login" : "/yarisma"}
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-4 p-4 rounded-xl border border-zinc-100 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/20 hover:border-indigo-200 dark:hover:border-indigo-900/50 transition-all group"
               >
-                <div className="h-10 w-10 shrink-0 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-lg flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform">
+                <div className="h-10 w-10 shrink-0 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-lg flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform relative">
                   ⚔️
+                  {isGuest && <span className="absolute -top-1 -right-1 text-xs">🔒</span>}
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 text-sm group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                    YKS Düellosu
+                  <h3 className="font-bold text-zinc-900 dark:text-zinc-100 text-sm group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                    YKS Düellosu {isGuest && <span className="text-[10px] text-zinc-400 font-normal">(Giriş Gerekli)</span>}
                   </h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
                     Hap bilgilerle 1v1 veya bota karşı yarış
@@ -204,7 +219,7 @@ export default function HeaderMenu() {
             {/* Drawer Footer */}
             <div className="p-4 bg-zinc-50 dark:bg-zinc-900/50 border-t border-zinc-100 dark:border-zinc-800 text-center">
               <span className="text-xs text-zinc-400 dark:text-zinc-500 block">
-                Hedeflerine ulaşmak için her gün çalışmaya devam et!
+                {isGuest ? "Giriş yaparak tüm özellikleri kilitleyin!" : "Hedeflerine ulaşmak için her gün çalışmaya devam et!"}
               </span>
             </div>
           </div>

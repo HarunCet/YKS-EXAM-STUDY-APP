@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { createClient } from '@/utils/supabase/client';
 
 interface Flashcard {
@@ -171,6 +172,18 @@ export default function FlashcardsPage() {
   const [syncing, setSyncing] = useState(false);
 
   const supabase = createClient();
+  const router = useRouter();
+
+  // Check auth
+  useEffect(() => {
+    async function checkAuth() {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        router.push('/login');
+      }
+    }
+    checkAuth();
+  }, [supabase, router]);
 
   // Filter cards
   const filteredCards = selectedCat === 'all'

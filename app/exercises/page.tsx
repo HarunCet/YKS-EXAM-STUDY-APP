@@ -1,6 +1,5 @@
 import { createClient } from '@/utils/supabase/server';
 import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
 import ExercisesClient from '@/app/exercises/ExercisesClient';
 
 export default async function ExercisesPage() {
@@ -9,23 +8,12 @@ export default async function ExercisesPage() {
 
   const { data: { user } } = await supabase.auth.getUser();
 
-  if (!user) {
-    redirect('/login');
-  }
-
-  // Get stats from metadata
-  const stats = user.user_metadata?.exercise_stats || {
-    mathsSolved: 0,
-    mathsAccuracy: 0,
-    paragraphsRead: 0,
-    paragraphsAvgWpm: 0,
-    sprintHighscore: 0,
-    flashcardsStudied: 0,
-  };
+  // Get stats from metadata if user exists
+  const stats = user?.user_metadata?.exercise_stats || null;
 
   return (
     <ExercisesClient 
-      userEmail={user.email || ''} 
+      userEmail={user?.email || null} 
       initialStats={stats} 
     />
   );

@@ -14,11 +14,12 @@ type Task = {
 interface GoalsAndPlansProps {
   initialTasks: Task[];
   initialSubjectNotes: Record<string, string>;
+  isGuest?: boolean;
 }
 
 const subjectMeta: Record<string, { icon: string; color: string; bg: string; darkBg: string; border: string }> = {
   matematik: { icon: '📐', color: 'text-blue-600 dark:text-blue-400', bg: 'bg-blue-50/50', darkBg: 'dark:bg-blue-950/10', border: 'border-blue-100 dark:border-blue-950/30' },
-  fizik: { icon: '⚛️', color: 'text-purple-600 dark:text-purple-400', bg: 'bg-purple-50/50', darkBg: 'dark:bg-purple-950/10', border: 'border-purple-100 dark:border-purple-950/30' },
+  fizik: { icon: '⚛️', color: 'text-purple-650 dark:text-purple-400', bg: 'bg-purple-50/50', darkBg: 'dark:bg-purple-950/10', border: 'border-purple-100 dark:border-purple-950/30' },
   kimya: { icon: '🧪', color: 'text-emerald-600 dark:text-emerald-400', bg: 'bg-emerald-50/50', darkBg: 'dark:bg-emerald-950/10', border: 'border-emerald-100 dark:border-emerald-950/30' },
   biyoloji: { icon: '🧬', color: 'text-rose-600 dark:text-rose-400', bg: 'bg-rose-50/50', darkBg: 'dark:bg-rose-950/10', border: 'border-rose-100 dark:border-rose-950/30' },
   dil_bilgisi: { icon: '✍️', color: 'text-amber-600 dark:text-amber-400', bg: 'bg-amber-50/50', darkBg: 'dark:bg-amber-950/10', border: 'border-amber-100 dark:border-amber-950/30' },
@@ -30,7 +31,7 @@ const priorityMeta = {
   low:  { label: 'Sonra', dot: 'bg-emerald-500', badge: 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/30 dark:text-emerald-400 dark:border-emerald-900/30' },
 };
 
-export default function GoalsAndPlans({ initialTasks, initialSubjectNotes }: GoalsAndPlansProps) {
+export default function GoalsAndPlans({ initialTasks, initialSubjectNotes, isGuest = false }: GoalsAndPlansProps) {
   const [tasks, setTasks] = useState<Task[]>(initialTasks);
   const [saving, setSaving] = useState(false);
   const supabase = createClient();
@@ -98,7 +99,30 @@ export default function GoalsAndPlans({ initialTasks, initialSubjectNotes }: Goa
     : 0;
 
   return (
-    <div className="mb-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm transition-all hover:border-zinc-300 dark:hover:border-zinc-700">
+    <div className="mb-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm transition-all hover:border-zinc-300 dark:hover:border-zinc-700 relative overflow-hidden">
+      {isGuest && (
+        <div className="absolute inset-0 bg-white/70 dark:bg-zinc-950/80 backdrop-blur-sm z-30 flex flex-col justify-center items-center p-6 text-center select-none animate-fadeIn">
+          <div className="max-w-md space-y-4">
+            <div className="w-16 h-16 rounded-full bg-blue-50 dark:bg-zinc-800 text-blue-600 dark:text-blue-450 border border-blue-100 dark:border-zinc-700 flex items-center justify-center text-3xl mx-auto shadow-inner animate-pulse">
+              🔒
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-lg font-black text-zinc-900 dark:text-zinc-150">
+                Kişisel Çalışma Paneli & Görev Takibi
+              </h3>
+              <p className="text-xs text-zinc-550 dark:text-zinc-400 leading-relaxed font-semibold">
+                Haftalık hedeflerinizi belirlemek, ders bazlı çalışma notlarınızı bulutta saklamak ve ilerleme durumunuzu takip edebilmek için ücretsiz üye olun veya giriş yapın.
+              </p>
+            </div>
+            <Link
+              href="/login"
+              className="inline-block px-6 py-2.5 bg-blue-650 hover:bg-blue-700 text-white font-black text-xs rounded-xl transition-all shadow-md active:scale-95 cursor-pointer uppercase tracking-wider"
+            >
+              Giriş Yap / Üye Ol
+            </Link>
+          </div>
+        </div>
+      )}
       
       {/* Title & Status Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-6 border-b border-zinc-150 dark:border-zinc-800 mb-6">

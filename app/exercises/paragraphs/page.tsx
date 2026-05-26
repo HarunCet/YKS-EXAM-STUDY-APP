@@ -133,9 +133,12 @@ export default function ParagraphsExercisePage() {
   const handleFinishSet = async () => {
     setShowResults(true);
 
-    // Save stats to Supabase
+    // Save stats to Supabase / LocalStorage
     try {
       const { data: { user } } = await supabase.auth.getUser();
+      const finalTotal = QUESTIONS_PER_SET;
+      const newWpm = readMode === 'guided' ? selectedWpm : 250; // default estimated
+
       if (user) {
         const currentMeta = user.user_metadata || {};
         const currentStats = currentMeta.exercise_stats || {
@@ -147,11 +150,7 @@ export default function ParagraphsExercisePage() {
           flashcardsStudied: 0
         };
 
-        const finalTotal = QUESTIONS_PER_SET;
         const nextParagraphsRead = (currentStats.paragraphsRead || 0) + finalTotal;
-
-        // Calculate average WPM
-        const newWpm = readMode === 'guided' ? selectedWpm : 250; // default estimated
         const oldTotal = currentStats.paragraphsRead || 0;
         const oldWpm = currentStats.paragraphsAvgWpm || 0;
         const nextAvgWpm = nextParagraphsRead > 0 ? Math.round(((oldTotal * oldWpm) + (finalTotal * newWpm)) / nextParagraphsRead) : 0;
@@ -166,9 +165,32 @@ export default function ParagraphsExercisePage() {
             }
           }
         });
+      } else {
+        // Fallback for guest in localStorage
+        const localStatsRaw = localStorage.getItem('guest_exercise_stats');
+        const currentStats = localStatsRaw ? JSON.parse(localStatsRaw) : {
+          mathsSolved: 0,
+          mathsAccuracy: 0,
+          paragraphsRead: 0,
+          paragraphsAvgWpm: 0,
+          sprintHighscore: 0,
+          flashcardsStudied: 0
+        };
+
+        const nextParagraphsRead = (currentStats.paragraphsRead || 0) + finalTotal;
+        const oldTotal = currentStats.paragraphsRead || 0;
+        const oldWpm = currentStats.paragraphsAvgWpm || 0;
+        const nextAvgWpm = nextParagraphsRead > 0 ? Math.round(((oldTotal * oldWpm) + (finalTotal * newWpm)) / nextParagraphsRead) : 0;
+
+        const nextStats = {
+          ...currentStats,
+          paragraphsRead: nextParagraphsRead,
+          paragraphsAvgWpm: nextAvgWpm
+        };
+        localStorage.setItem('guest_exercise_stats', JSON.stringify(nextStats));
       }
     } catch (e) {
-      console.error('Paragraph stats could not be synced with Supabase:', e);
+      console.error('Paragraph stats could not be saved:', e);
     }
   };
 

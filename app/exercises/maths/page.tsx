@@ -132,9 +132,11 @@ export default function MathsExercisePage() {
     setSetFinished(true);
     if (timerRef.current) clearInterval(timerRef.current);
 
-    // Save stats to Supabase
+    // Save stats to Supabase / LocalStorage
     try {
       const { data: { user } } = await supabase.auth.getUser();
+      const finalTotal = setProblems.length;
+      const finalCorrect = questionStates.filter(s => s.checked && s.isCorrect).length;
       if (user) {
         const currentMeta = user.user_metadata || {};
         const currentStats = currentMeta.exercise_stats || {
@@ -146,15 +148,32 @@ export default function MathsExercisePage() {
           flashcardsStudied: 0
         };
 
-        const finalTotal = setProblems.length;
-        // Count final correctness of current state
-        const finalCorrect = questionStates.filter(s => s.checked && s.isCorrect).length;
-
         const nextMathsSolved = (currentStats.mathsSolved || 0) + finalTotal;
         const oldTotal = currentStats.mathsSolved || 0;
         const oldAcc = currentStats.mathsAccuracy || 0;
         const totalCorrect = Math.round((oldTotal * oldAcc) / 100) + finalCorrect;
         const nextAccuracy = nextMathsSolved > 0 ? Math.round((totalCorrect / nextMathsSolved) * 100) : 0;
+
+        const newWrongQuestions: any[] = [];
+        setProblems.forEach((p, idx) => {
+          const state = questionStates[idx];
+          if (state.checked && !state.isCorrect) {
+            newWrongQuestions.push({
+              id: `math_${Date.now()}_${idx}`,
+              subject: 'matematik',
+              topic: p.konu || 'Matematik',
+              questionText: p.question,
+              correctAnswer: p.dogru_cevap || p.answer,
+              userAnswer: state.selectedOption || state.typedAnswer,
+              options: p.secenekler || undefined,
+              solutionText: p.aciklama || 'Matematik egzersizinden otomatik eklendi.',
+              createdAt: Date.now(),
+              status: 'pending'
+            });
+          }
+        });
+
+        const existingWrong = currentMeta.wrong_questions || [];
 
         await supabase.auth.updateUser({
           data: {
@@ -163,12 +182,37 @@ export default function MathsExercisePage() {
               ...currentStats,
               mathsSolved: nextMathsSolved,
               mathsAccuracy: nextAccuracy
-            }
+            },
+            wrong_questions: [...existingWrong, ...newWrongQuestions]
           }
         });
+      } else {
+        // Fallback for guest in localStorage
+        const localStatsRaw = localStorage.getItem('guest_exercise_stats');
+        const currentStats = localStatsRaw ? JSON.parse(localStatsRaw) : {
+          mathsSolved: 0,
+          mathsAccuracy: 0,
+          paragraphsRead: 0,
+          paragraphsAvgWpm: 0,
+          sprintHighscore: 0,
+          flashcardsStudied: 0
+        };
+
+        const nextMathsSolved = (currentStats.mathsSolved || 0) + finalTotal;
+        const oldTotal = currentStats.mathsSolved || 0;
+        const oldAcc = currentStats.mathsAccuracy || 0;
+        const totalCorrect = Math.round((oldTotal * oldAcc) / 100) + finalCorrect;
+        const nextAccuracy = nextMathsSolved > 0 ? Math.round((totalCorrect / nextMathsSolved) * 100) : 0;
+
+        const nextStats = {
+          ...currentStats,
+          mathsSolved: nextMathsSolved,
+          mathsAccuracy: nextAccuracy
+        };
+        localStorage.setItem('guest_exercise_stats', JSON.stringify(nextStats));
       }
     } catch (e) {
-      console.error('Math stats could not be synced with Supabase:', e);
+      console.error('Math stats could not be saved:', e);
     }
   };
 

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 interface ExerciseStats {
@@ -12,15 +13,40 @@ interface ExerciseStats {
 }
 
 interface ExercisesClientProps {
-  userEmail: string;
-  initialStats: ExerciseStats;
+  userEmail: string | null;
+  initialStats: ExerciseStats | null;
 }
 
 export default function ExercisesClient({ userEmail, initialStats }: ExercisesClientProps) {
+  const isGuest = !userEmail;
+
+  const [stats, setStats] = useState<ExerciseStats>({
+    mathsSolved: 0,
+    mathsAccuracy: 0,
+    paragraphsRead: 0,
+    paragraphsAvgWpm: 0,
+    sprintHighscore: 0,
+    flashcardsStudied: 0,
+  });
+
+  useEffect(() => {
+    if (initialStats) {
+      setStats(initialStats);
+    } else {
+      // Load stats from localStorage for guest
+      const localStatsRaw = localStorage.getItem('guest_exercise_stats');
+      if (localStatsRaw) {
+        try {
+          setStats(JSON.parse(localStatsRaw));
+        } catch (e) {}
+      }
+    }
+  }, [initialStats]);
+
   return (
     <div className="flex flex-col min-h-screen bg-zinc-50 dark:bg-black text-foreground">
       {/* Header */}
-      <header className="p-4 bg-white dark:bg-zinc-900 border-b dark:border-zinc-800 flex justify-between items-center z-10 sticky top-0 shadow-sm">
+      <header className="p-4 bg-white dark:bg-zinc-900 border-b dark:border-zinc-800 flex justify-between items-center z-10 sticky top-0 shadow-sm animate-fadeIn">
         <div className="flex items-center gap-4">
           <Link
             href="/"
@@ -37,9 +63,15 @@ export default function ExercisesClient({ userEmail, initialStats }: ExercisesCl
           </h1>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-xs text-zinc-500 font-mono hidden md:inline-block bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 rounded-full border dark:border-zinc-800">
-            👤 {userEmail}
-          </span>
+          {isGuest ? (
+            <span className="text-xs text-zinc-400 font-mono bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 rounded-full border dark:border-zinc-800">
+              👤 Misafir Kullanıcı
+            </span>
+          ) : (
+            <span className="text-xs text-zinc-500 font-mono bg-zinc-100 dark:bg-zinc-800 px-2.5 py-1 rounded-full border dark:border-zinc-800">
+              👤 {userEmail}
+            </span>
+          )}
         </div>
       </header>
 
@@ -67,34 +99,36 @@ export default function ExercisesClient({ userEmail, initialStats }: ExercisesCl
           <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
             <span className="text-[10px] font-bold text-zinc-450 dark:text-zinc-400 uppercase tracking-wider block">Matematik Çözümleri</span>
             <div className="flex items-baseline gap-1 mt-2">
-              <span className="text-3xl font-black text-blue-600 dark:text-blue-400">{initialStats.mathsSolved || 0}</span>
+              <span className="text-3xl font-black text-blue-600 dark:text-blue-400">{stats.mathsSolved || 0}</span>
               <span className="text-xs text-zinc-450 dark:text-zinc-500 font-medium">soru</span>
             </div>
-            <div className="text-[10px] text-zinc-500 mt-1">Ort. Başarı: %{initialStats.mathsAccuracy || 0}</div>
+            <div className="text-[10px] text-zinc-500 mt-1">Ort. Başarı: %{stats.mathsAccuracy || 0}</div>
           </div>
 
           <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
             <span className="text-[10px] font-bold text-zinc-450 dark:text-zinc-400 uppercase tracking-wider block">Paragraf Okuma</span>
             <div className="flex items-baseline gap-1 mt-2">
-              <span className="text-3xl font-black text-green-600 dark:text-green-400">{initialStats.paragraphsRead || 0}</span>
+              <span className="text-3xl font-black text-green-600 dark:text-green-400">{stats.paragraphsRead || 0}</span>
               <span className="text-xs text-zinc-450 dark:text-zinc-500 font-medium">paragraf</span>
             </div>
-            <div className="text-[10px] text-zinc-500 mt-1">Ort. Hız: {initialStats.paragraphsAvgWpm || 0} WPM</div>
+            <div className="text-[10px] text-zinc-500 mt-1">Ort. Hız: {stats.paragraphsAvgWpm || 0} WPM</div>
           </div>
 
-          <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
+          <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm relative overflow-hidden">
+            {isGuest && <span className="absolute top-2 right-2 text-xs" title="Bu özellik üye girişi gerektirir">🔒</span>}
             <span className="text-[10px] font-bold text-zinc-450 dark:text-zinc-400 uppercase tracking-wider block">İşlem Hızı Rekoru</span>
             <div className="flex items-baseline gap-1 mt-2">
-              <span className="text-3xl font-black text-amber-600 dark:text-amber-400">{initialStats.sprintHighscore || 0}</span>
+              <span className="text-3xl font-black text-amber-600 dark:text-amber-400">{stats.sprintHighscore || 0}</span>
               <span className="text-xs text-zinc-450 dark:text-zinc-500 font-medium">skor</span>
             </div>
             <div className="text-[10px] text-zinc-500 mt-1">60sn pratik işlem rekoru</div>
           </div>
 
-          <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm">
+          <div className="p-5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm relative overflow-hidden">
+            {isGuest && <span className="absolute top-2 right-2 text-xs" title="Bu özellik üye girişi gerektirir">🔒</span>}
             <span className="text-[10px] font-bold text-zinc-450 dark:text-zinc-400 uppercase tracking-wider block">Çalışılan Formüller</span>
             <div className="flex items-baseline gap-1 mt-2">
-              <span className="text-3xl font-black text-purple-600 dark:text-purple-400">{initialStats.flashcardsStudied || 0}</span>
+              <span className="text-3xl font-black text-purple-600 dark:text-purple-400">{stats.flashcardsStudied || 0}</span>
               <span className="text-xs text-zinc-450 dark:text-zinc-500 font-medium">kart</span>
             </div>
             <div className="text-[10px] text-zinc-500 mt-1">Aktif recall ezber takibi</div>
@@ -167,62 +201,124 @@ export default function ExercisesClient({ userEmail, initialStats }: ExercisesCl
             </div>
 
             {/* Speed Calculation Sprint */}
-            <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:border-amber-500 transition-colors group">
-              <div className="space-y-4">
-                <div className="flex justify-between items-start">
-                  <div className="h-12 w-12 bg-amber-50 text-amber-600 dark:bg-amber-950/20 dark:text-amber-400 rounded-2xl flex items-center justify-center text-2xl">
-                    ⚡
+            {isGuest ? (
+              <div className="bg-zinc-50/50 dark:bg-zinc-900/50 border border-zinc-200/80 dark:border-zinc-800/80 rounded-3xl p-6 shadow-sm flex flex-col justify-between opacity-80 hover:opacity-100 hover:border-zinc-350 dark:hover:border-zinc-700 transition-all group">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div className="h-12 w-12 bg-zinc-100 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400 rounded-2xl flex items-center justify-center text-2xl relative">
+                      ⚡
+                      <span className="absolute -top-1 -right-1 text-xs">🔒</span>
+                    </div>
+                    <span className="px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 border dark:border-zinc-700 text-zinc-500 text-[10px] font-bold">
+                      Üyelik Gerekli
+                    </span>
                   </div>
-                  <span className="px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/30 text-amber-600 dark:text-amber-400 text-[10px] font-bold">
-                    Pratik Hesaplama
-                  </span>
+                  <div>
+                    <h4 className="text-lg font-extrabold dark:text-white">Pratik İşlem Sprinti</h4>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-450 mt-2 leading-relaxed">
+                      TYT Matematikte soru çözerken basit işlemlerde vakit mi kaybediyorsunuz? 60 saniyeyik pratik işlem yarışmasıyla zihinden toplama, çıkarma, çarpma, bölme becerinizi geliştirin.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-lg font-extrabold dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">Pratik İşlem Sprinti</h4>
-                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 leading-relaxed">
-                    TYT Matematikte soru çözerken basit işlemlerde vakit mi kaybediyorsunuz? 60 saniyelik pratik işlem yarışmasıyla zihinden toplama, çıkarma, çarpma, bölme, üs alma ve kök tahmini becerinizi sınırlarına zorlayın.
-                  </p>
+                <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center">
+                  <span className="text-xs text-zinc-550 dark:text-zinc-500">Süre: 60 Saniye</span>
+                  <Link
+                    href="/login"
+                    className="px-4 py-2 bg-zinc-700 hover:bg-zinc-800 text-white font-bold rounded-xl text-xs transition-colors shadow-md"
+                  >
+                    Giriş Yap ve Yarış 🔒
+                  </Link>
                 </div>
               </div>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center">
-                <span className="text-xs text-zinc-450 dark:text-zinc-500">Süre: 60 Saniye</span>
-                <Link
-                  href="/exercises/sprint"
-                  className="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl text-xs transition-colors shadow-md"
-                >
-                  Sprinti Başlat →
-                </Link>
+            ) : (
+              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:border-amber-500 transition-colors group">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div className="h-12 w-12 bg-amber-50 text-amber-600 dark:bg-amber-950/20 dark:text-amber-400 rounded-2xl flex items-center justify-center text-2xl">
+                      ⚡
+                    </div>
+                    <span className="px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/30 text-amber-600 dark:text-amber-400 text-[10px] font-bold">
+                      Pratik Hesaplama
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-extrabold dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">Pratik İşlem Sprinti</h4>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 leading-relaxed">
+                      TYT Matematikte soru çözerken basit işlemlerde vakit mi kaybediyorsunuz? 60 saniyelik pratik işlem yarışmasıyla zihinden toplama, çıkarma, çarpma, bölme, üs alma ve kök tahmini becerinizi sınırlarına zorlayın.
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center">
+                  <span className="text-xs text-zinc-450 dark:text-zinc-500">Süre: 60 Saniye</span>
+                  <Link
+                    href="/exercises/sprint"
+                    className="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl text-xs transition-colors shadow-md"
+                  >
+                    Sprinti Başlat →
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Spaced-Repetition Formula Flashcards */}
-            <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:border-purple-500 transition-colors group">
-              <div className="space-y-4">
-                <div className="flex justify-between items-start">
-                  <div className="h-12 w-12 bg-purple-50 text-purple-650 dark:bg-purple-950/20 dark:text-purple-400 rounded-2xl flex items-center justify-center text-2xl">
-                    🗂️
+            {isGuest ? (
+              <div className="bg-zinc-50/50 dark:bg-zinc-900/50 border border-zinc-200/80 dark:border-zinc-800/80 rounded-3xl p-6 shadow-sm flex flex-col justify-between opacity-80 hover:opacity-100 hover:border-zinc-350 dark:hover:border-zinc-700 transition-all group">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div className="h-12 w-12 bg-zinc-100 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400 rounded-2xl flex items-center justify-center text-2xl relative">
+                      🗂️
+                      <span className="absolute -top-1 -right-1 text-xs">🔒</span>
+                    </div>
+                    <span className="px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 border dark:border-zinc-700 text-zinc-550 text-[10px] font-bold">
+                      Üyelik Gerekli
+                    </span>
                   </div>
-                  <span className="px-2.5 py-1 rounded-full bg-purple-50 dark:bg-purple-950/20 border border-purple-100 dark:border-purple-900/30 text-purple-650 dark:text-purple-400 text-[10px] font-bold">
-                    Aktif Hatırlama
-                  </span>
+                  <div>
+                    <h4 className="text-lg font-extrabold dark:text-white">YKS Akıllı Bilgi Kartları</h4>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-450 mt-2 leading-relaxed">
+                      Matematik, Fizik, Kimya, Biyoloji ve Türkçe Dil Bilgisi derslerinin en kritik formül, kural ve hap bilgilerini aktif hatırlama yöntemiyle çalışın.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-lg font-extrabold dark:text-white group-hover:text-purple-650 dark:group-hover:text-purple-400 transition-colors">YKS Akıllı Bilgi Kartları</h4>
-                  <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 leading-relaxed">
-                    Matematik, Fizik, Kimya, Biyoloji ve Türkçe Dil Bilgisi derslerinin en kritik formül, kural ve hap bilgilerini aktif hatırlama yöntemiyle çalışın. Kendinizi puanlayın ve ezber durumunuzu takip edin.
-                  </p>
+                <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center">
+                  <span className="text-xs text-zinc-550 dark:text-zinc-500">Tüm Branşlar</span>
+                  <Link
+                    href="/login"
+                    className="px-4 py-2 bg-zinc-700 hover:bg-zinc-800 text-white font-bold rounded-xl text-xs transition-colors shadow-md"
+                  >
+                    Giriş Yap ve Çalış 🔒
+                  </Link>
                 </div>
               </div>
-              <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center">
-                <span className="text-xs text-zinc-450 dark:text-zinc-500">Tüm Branşlar</span>
-                <Link
-                  href="/exercises/flashcards"
-                  className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-xs transition-colors shadow-md"
-                >
-                  Kartları Çalış →
-                </Link>
+            ) : (
+              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:border-purple-500 transition-colors group">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-start">
+                    <div className="h-12 w-12 bg-purple-50 text-purple-650 dark:bg-purple-950/20 dark:text-purple-400 rounded-2xl flex items-center justify-center text-2xl">
+                      🗂️
+                    </div>
+                    <span className="px-2.5 py-1 rounded-full bg-purple-50 dark:bg-purple-950/20 border border-purple-100 dark:border-purple-900/30 text-purple-650 dark:text-purple-400 text-[10px] font-bold">
+                      Aktif Hatırlama
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-extrabold dark:text-white group-hover:text-purple-650 dark:group-hover:text-purple-400 transition-colors">YKS Akıllı Bilgi Kartları</h4>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 leading-relaxed">
+                      Matematik, Fizik, Kimya, Biyoloji ve Türkçe Dil Bilgisi derslerinin en kritik formül, kural ve hap bilgilerini aktif hatırlama yöntemiyle çalışın. Kendinizi puanlayın ve ezber durumunuzu takip edin.
+                    </p>
+                  </div>
+                </div>
+                <div className="mt-6 pt-4 border-t border-zinc-100 dark:border-zinc-800 flex justify-between items-center">
+                  <span className="text-xs text-zinc-450 dark:text-zinc-500">Tüm Branşlar</span>
+                  <Link
+                    href="/exercises/flashcards"
+                    className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-xs transition-colors shadow-md"
+                  >
+                    Kartları Çalış →
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </main>
